@@ -1,0 +1,226 @@
+[
+  {
+    "title": "Basin Area",
+    "subtitle": "Premium Bathware basins epitomize artistry, blending form and function seamlessly. Each curve and contour reflects meticulous design and engineering.",
+    "bannerbackground": "https://s7d1.scene7.com/is/image/kohlergbhcloudprod/Short-Hero-aaf21600:Short-Hero-S-Desktop?op_sharpen=1&wid=1440&hei=638&dpr=off",
+    "categories": [
+      {
+        "img": "/catimgs/basin.jpg",
+        "title": "Basin",
+        "subtitle": "Elevate your space with our elegant vessel, pedestal, and countertop basins, merging style and functionality effortlessly."
+      },
+      {
+        "img":  "/catimgs/Faucets.jpg",
+        "title": "Faucets",
+        "subtitle": "Choose from sleek modern designs to timeless classics, including single-handle, wall-mount, and touchless options."
+      },
+      {
+        "img": "/catimgs/BathroomMirrorCabinate.jpg",
+        "title": "Bathroom Mirror Cabinets",
+        "subtitle": "Enhance your bathroom with our versatile mirrors: vanity, LED-lighted, frameless, and medicine cabinets. Reflect style effortlessly."
+      },
+      {
+        "img": "/catimgs/BathroomVanity.jpg",
+        "title": "Bathroom Vanity",
+        "subtitle": "Elevate your bathroom with our stylish vanities: wall-mounted, freestanding, and floating. The perfect form and function."
+      },
+      {
+        "img": "/catimgs/BasinFittings.jpg",
+        "title": "Basin Fittings",
+        "subtitle": "Explore our range of basin fittings, including faucets, taps, spouts, and mixers. Elevate your basin with style and functionality."
+      },
+      {
+        "img": "/catimgs/BasinAccessories.jpg",
+        "title": "Bathroom Accessories",
+        "subtitle": "Elevate your bathroom with stylish fittings like faucets, showerheads, sinks, toilets, and mirrors for a luxurious and functional space."
+      }
+    ]
+  },
+
+  {
+    "title": "Showering Area",
+    "subtitle": "Experience the rejuvenating power of water, revitalizing your body, refreshing your mind, and uplifting your spirit with Premium Bathware.",
+    "bannerbackground": "https://s7d1.scene7.com/is/image/kohlergbhcloudprod/Short-Hero-aaf14639:Short-Hero-S-Desktop?op_sharpen=1&wid=1440&hei=635&dpr=off",
+    "categories": [
+      {
+        "img": "/catimgs/Shower.jpg",
+        "title": "Showers",
+        "subtitle": "Indulge in luxury with our range of showers: rain showers, handheld showers, and steam showers, giving a spa-like experience."
+      },
+      {
+        "img": "/catimgs/HandShower.jpg",
+        "title": "Hand Shower",
+        "subtitle": "Experience versatility with hand showers, including handheld, slide bar, and rain shower models. Upgrade your bathing."
+      },
+      {
+        "img": "https://s7d1.scene7.com/is/image/kohlergbhcloudprod/Content-4-Up-Slider-Banner-Divider-aaf14666:Content-Four-Up-Slider-Banner-Divider-Desktop?wid=341&hei=456&dpr=off",
+        "title": "Diverters & Trims",
+        "subtitle": "Discover our versatile range of diverters & trims, including thermostatic valves, volume controls, and pressure balance valves."
+      },
+      {
+        "img": "/catimgs/DigitalShowering.jpg",
+        "title": "Digital Showering",
+        "subtitle": "Experience luxurious showers with digital precision. Explore thermostatic controls, presets, smartphone integration, and more."
+      },
+      {
+        "img": "/catimgs/ShowerDoor.jpg",
+        "title": "Shower Doors",
+        "subtitle": "Shower doors provide privacy and style to your bathroom. Explore various types like sliding, pivot, and frameless. Upgrade today!"
+      },
+      {
+        "img": "/catimgs/BodySpreay.jpg",
+        "title": "Body Spray",
+        "subtitle": "Discover refreshing body spray showers! Explore various types for a revitalizing experience. Upgrade your bathroom now."
+      },
+      {
+        "img": "/catimgs/Steam.jpg",
+        "title": "Steam",
+        "subtitle": "Steam showers offer a luxurious spa experience at home. Explore various types like stand-alone or combination units."
+      },
+      {
+        "img": "/catimgs/ShowerFitting.jpg",
+        "title": "Shower Fitting",
+        "subtitle": "Discover the perfect shower fitting for your bathroom. From handheld to rainfall, explore various types of shower fittings."
+      },
+      {
+        "img": "/catimgs/BasinAccessories2.jpg",
+        "title": "Bathroom Accessories",
+        "subtitle": "Elevate your bathroom with stylish fittings like faucets, showerheads, sinks, toilets, and mirrors for a luxurious and functional space."
+      }
+    ]
+  },
+
+  {
+    "title": "Toilet Area",
+    "subtitle": "Premium Bathware toilets epitomize superior design, performance, and innovative technology, ensuring an exceptional bathroom experience.",
+    "bannerbackground": "https://s7d1.scene7.com/is/image/kohlergbhcloudprod/Short-Hero-aaf24674:Short-Hero-S-Desktop?op_sharpen=1&wid=1440&hei=634&dpr=off",
+    "categories": [
+      {
+        "img": "/catimgs/Toilets.jpg",
+        "title": "Toilets",
+        "subtitle": "Discover types of toilets and their features. From traditional to modern designs, find the perfect fit for your space. Explore now"
+      },
+
+      {
+        "img": "/catimgs/ToiletsSets.jpg",
+        "title": "Toilet Seats",
+        "subtitle": "Explore various styles of toilet seats, from standard to bidet, and find the perfect fit for your bathroom. Upgrade today!"
+      },
+
+      {
+        "img": "/catimgs/SmartToilate.jpg",
+        "title": "Smart Toilet",
+        "subtitle": "Smart toilets integrate tech for enhanced hygiene & comfort. Styles include bidet, self-cleaning, & heated seats. Upgrade today!"
+      },
+
+      {
+        "img": "/catimgs/Cisterns.jpg",
+        "title": "Cisterns And Flushing",
+        "subtitle": "Explore our range of toilet flushes: Discover gravity, pressure-assisted, and dual-flush types. Upgrade your bathroom today."
+      },
+
+      {
+        "img": "/catimgs/BasinAccessories2.jpg",
+        "title": "Bathroom Accessories",
+        "subtitle": "Elevate your bathroom with stylish fittings like faucets, showerheads, sinks, toilets, and mirrors for a luxurious and functional space."
+      }
+    ]
+  },
+
+  {
+    "title": "Smart Products",
+    "subtitle": "Premium Bathware smart toilets: Merging elegant design with cutting-edge tech for unmatched performance and style. Elevate your bathroom experience!",
+    "bannerbackground": "https://s7d1.scene7.com/is/image/kohlergbhcloudprod/Short-Hero-aaf16877:Short-Hero-S-Desktop?op_sharpen=1&wid=1440&hei=634&dpr=off",
+    "categories": [
+      {
+        "img": "/catimgs/SmartToilate.jpg",
+        "title": "Smart Toilet",
+        "subtitle": "Smart toilets integrate tech for enhanced hygiene & comfort. Styles include bidet, self-cleaning, & heated seats. Upgrade today!"
+      },
+
+      {
+        "img": "/catimgs/Electronicbidetseats.jpg",
+        "title": "Electronic Bidet Seats",
+        "subtitle": "Upgrade your bathroom experience with Electronic Bidet Toilet Seats. Discover various styles & enjoy ultimate comfort."
+      }
+    ]
+  },
+
+  {
+    "title": "Commercial",
+    "subtitle": "Elevate hygiene with the touch-free sensor faucets, seamlessly merging technology and style for a cleaner, more sophisticated experience from Premium Bathware.",
+    "bannerbackground": "https://kohler.scene7.com/is/image/kohlergbhuat/Short-Hero-aaf24687:Short-Hero-S-Desktop?op_sharpen=1&wid=1440&hei=632&dpr=off",
+    "categories": [
+      {
+        "img": "/catimgs/Sensoryfaucet.jpg",
+        "title": "Sensor Faucets",
+        "subtitle": "Sensor faucets use motion sensors to detect hand movements, enabling touch-free operation. Explore modern designs today."
+      },
+
+      {
+        "img": "/catimgs/UrinalsSensors.jpg",
+        "title": "Urinals & Sensors",
+        "subtitle": "Explore modern urinals with sensors for efficient water usage. Discover various styles & sensor technologies. Upgrade today."
+      },
+
+      {
+        "img": "/catimgs/SoftpressFlushFaucetsValves.jpg",
+        "title": "Flush Faucets & Valves",
+        "subtitle": "Flush faucets & valves ensure water flow efficiency. Explore various styles for optimal performance. Upgrade now."
+      },
+      {
+        "img": "/catimgs/ShowerDoor.jpg",
+        "title": "Shower Doors",
+        "subtitle": "Shower doors provide privacy and style to your bathroom. Explore various types like sliding, pivot, and frameless. Upgrade today!"
+      },
+      {
+        "img": "/catimgs/CustomizeMirrors.jpg",
+        "title": "Customised Mirror",
+        "subtitle": "Elevate your space with a bespoke bathroom mirror tailored to your style. Get flush designs for a modern touch."
+      },
+      {
+        "img": "/catimgs/CommercialAccessories.jpg",
+        "title": "Commercial Accessories",
+        "subtitle": "Discover premium commercial bathroom accessories for stylish and efficient spaces. Explore our designs for a sleek finish."
+      }
+    ]
+  },
+
+  {
+    "title": "Wellness",
+    "subtitle": "Elevate hygiene with Premium Bathware. Explore the touchless sensor faucets, seamlessly merging technology and design for optimal cleanliness.",
+    "bannerbackground": "https://s7d1.scene7.com/is/image/kohlergbhcloudprod/Short-Hero-aad47839_rgb:Short-Hero-S-Desktop?op_sharpen=1&wid=1440&hei=633&dpr=off",
+    "categories": [
+      {
+        "img": "/catimgs/Steam.jpg",
+        "title": "Steam",
+        "subtitle": "Steam showers offer a luxurious spa experience at home. Explore various types like stand-alone or combination units."
+      },
+
+      {
+        "img": "/catimgs/BathTob.jpg",
+        "title": "Bathtubs",
+        "subtitle": "Discover different styles of bathtubs like freestanding, alcove, and corner tubs. Elevate your luxurious relaxation at home"
+      },
+
+      {
+        "img": "/catimgs/BathtubFillers.jpg",
+        "title": "Bathtub Fillers",
+        "subtitle": "Upgrade your bathing experience with stylish bathtub fillers in wall-mounted, freestanding, or deck-mounted styles."
+      }
+    ]
+  },
+
+  {
+    "title": "Kitchen Faucet",
+    "subtitle": "Premium Bathware kitchen faucets seamlessly blend elegance with advanced technology, ensuring long-lasting performance and durability.",
+    "bannerbackground": "https://s7d1.scene7.com/is/image/kohlergbhcloudprod/Short-Hero-aaf14425:Short-Hero-S-Desktop?op_sharpen=1&wid=1440&hei=636&dpr=off",
+    "categories": [
+      {
+        "img": "/catimgs/KitchenFaucet.jpg",
+        "title": "Kitchen Faucet",
+        "subtitle": "Discover stylish kitchen faucets for your home. From sleek modern designs to classic fixtures, find the perfect faucet."
+      }
+    ]
+  }
+]

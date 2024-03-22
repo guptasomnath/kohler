@@ -45,20 +45,16 @@ function page() {
             description="To be the brand that inspires people worldwide to rediscover the joys of water and light."
           />
 
-          <Vision
-            className="bg-[#BABABA]"
-            text="Values"
-            children={
-              <ul className="list-disc">
-                <li>Passion for Technology</li>
-                <li>Highest quality standards</li>
-                <li>Building strong relationship</li>
-                <li>Excellent customer service</li>
-                <li>Taking care of our people</li>
-                <li>Integrity</li>
-              </ul>
-            }
-          />
+          <Vision className="bg-[#BABABA]" text="Values">
+            <ul className="list-disc">
+              <li>Passion for Technology</li>
+              <li>Highest quality standards</li>
+              <li>Building strong relationship</li>
+              <li>Excellent customer service</li>
+              <li>Taking care of our people</li>
+              <li>Integrity</li>
+            </ul>
+          </Vision>
         </ul>
 
         <p className="w-full text-center pt-10 text-1xl">

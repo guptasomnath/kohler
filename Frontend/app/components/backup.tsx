@@ -170,13 +170,13 @@ export default function Page({
                 <Filters
                   parentCatName={parentCatName}
                   catName={catName}
-                  onCheckBoxChanged={onCheckBoxChanged}
+                  // onCheckBoxChanged={onCheckBoxChanged}
                 />
 
                 {/* Product grid */}
                 <div className="col-span-5 sm:col-span-6">
-                  <ProductsListview products={products} />
-                  <Pagination totalPages={5} page={currentPage} />
+                  {/* <ProductsListview products={products} /> */}
+                  {/* <Pagination totalPages={5} page={currentPage} /> */}
                 </div>
                 {/* <InfiniteScrollComponent /> */}
               </div>

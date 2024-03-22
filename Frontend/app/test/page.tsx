@@ -30,8 +30,8 @@ async function page() {
         <button type="submit">Store Data</button>
       </form>
 
-      {result.response.map((item) => (
-        <label>{item}</label>
+      {result.response.map((item, index) => (
+        <label key={index}>{item}</label>
       ))}
     </div>
   );

@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import axios from "axios";
 import { IProducts } from "@/types/products";
 import ProductsItem from "./ProductsItem";
 import { API_BASE_URL } from "@/utils/API_BASE_URL";
@@ -18,18 +17,18 @@ const InfiniteScrollComponent = () => {
   }, [skip]);
 
   const fetchData = async () => {
-    try {
-      //   const response = await axios.get(`http://localhost:8080/products?catname=basin&limit=${limit}&skip=${skip}`);
-      const response = await axios.get(
-        `http://localhost:8080/products?catname=basin&limit=${limit}&skip=${skip}`
-      );
-      const newData = response.data; // Assuming your API returns an array of items
-      console.log(newData);
-      setItems((prevItems) => [...prevItems, ...newData]);
-      setHasMore(newData.length === limit); // If the number of items fetched is less than the limit, it means there are no more items to fetch
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
+    // try {
+    //   //   const response = await axios.get(`http://localhost:8080/products?catname=basin&limit=${limit}&skip=${skip}`);
+    //   const response = await axios.get(
+    //     `http://localhost:8080/products?catname=basin&limit=${limit}&skip=${skip}`
+    //   );
+    //   const newData = response.data; // Assuming your API returns an array of items
+    //   console.log(newData);
+    //   setItems((prevItems) => [...prevItems, ...newData]);
+    //   setHasMore(newData.length === limit); // If the number of items fetched is less than the limit, it means there are no more items to fetch
+    // } catch (error) {
+    //   console.error("Error fetching data:", error);
+    // }
   };
 
   const loadMoreData = () => {

@@ -10,8 +10,8 @@ interface MyDataState {
     response: ResponseType;
     isLoading: boolean;
     error: {
-        message : string,
-        status : number
+        message: string,
+        status: number
     } | null
 }
 
@@ -23,7 +23,7 @@ const initialState: MyDataState = {
 }
 
 export const fetchProducts = createAsyncThunk("slice/getProducts", async (url: string) => {
-    const response = await fetch(url);
+    const response = await fetch(url, { next: { revalidate: 350 } });
     const result = await response.json();
     return result;
 });

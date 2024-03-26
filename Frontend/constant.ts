@@ -1,1 +1,1 @@
-export const BASE_URL = "https://kohlerfrontend.vercel.app";
+export const BASE_URL = "https://premiumbathware.com";

@@ -1,29 +1,33 @@
+"use client";
+
 import { IFilter } from "@/types/products";
 import { API_BASE_URL } from "@/utils/API_BASE_URL";
 import { Dialog, Disclosure, Transition } from "@headlessui/react";
 import { MinusIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChangeEvent, Dispatch, useState } from "react";
 import React, { Fragment, SetStateAction } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../redux/slices/productsSlice";
 import datas from "@/public/datas.json";
+import SFilters from "../[catname]/components/SFilters";
+import { BASE_URL } from "@/constant";
+import Link from "next/link";
+import { RootState } from "../redux/store";
+import { setMobileFilterVisibility } from "../redux/slices/mobileFilter";
 
 interface IProps {
-  mobileFiltersOpen: boolean;
   catName: string;
   parentCatName: string;
-  setMobileFiltersOpen: Dispatch<SetStateAction<boolean>>;
+  children: React.ReactNode;
 }
 
-function MobileFilterMenu({
-  mobileFiltersOpen,
-  setMobileFiltersOpen,
-  catName,
-  parentCatName,
-}: IProps) {
+function MobileFilterMenu({ catName, parentCatName, children }: IProps) {
   const dispatch = useDispatch<any>();
 
   const [selectedCatNames, setSelectedCatNames] = useState<string[]>([catName]);
+  const mobileFiltersOpen = useSelector(
+    (state: RootState) => state.mobileFilter
+  );
 
   function createFetchProductsUrl(catNames: string[], limit = 16, skip = 0) {
     let tableNames = "";
@@ -90,7 +94,7 @@ function MobileFilterMenu({
         <Dialog
           as="div"
           className="relative z-40 "
-          onClose={setMobileFiltersOpen}
+          onClose={() => dispatch(setMobileFilterVisibility(false))}
         >
           <Transition.Child
             as={Fragment}
@@ -120,15 +124,14 @@ function MobileFilterMenu({
                   <button
                     type="button"
                     className="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white p-2 text-gray-400"
-                    onClick={() => setMobileFiltersOpen(false)}
+                    onClick={() => dispatch(setMobileFilterVisibility(false))}
                   >
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
-
                 {/* Filters */}
-                <form className="mt-4 border-t border-gray-200">
+                {/* <form className="mt-4 border-t border-gray-200">
                   {filters?.map((section) => (
                     <Disclosure
                       as="div"
@@ -190,7 +193,8 @@ function MobileFilterMenu({
                       )}
                     </Disclosure>
                   ))}
-                </form>
+                </form> */}
+                {children}
               </Dialog.Panel>
             </Transition.Child>
           </div>

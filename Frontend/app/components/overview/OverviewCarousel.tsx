@@ -13,14 +13,14 @@ function OverviewCarousel({parentCatName, categoriesInfo} : IProps) {
       <div className="w-full py-10 px-12 sm:hidden">
         <Carousel datasLength={categoriesInfo?.length}>
           {categoriesInfo?.map((item) => (
-            <ProductsCatList key={item.title} parentCatName = {parentCatName} img={item.img} subtitle={item.subtitle} title={item.title}/>
+            <ProductsCatList hasLink = {true} key={item.title} parentCatName = {parentCatName} img={item.img} subtitle={item.subtitle} title={item.title}/>
           ))}
         </Carousel>
       </div>
 
-      <ul className="hidden sm:grid grid-cols-1 gap-8 px-4 sm:pt-7">
+      <ul className="hidden sm:grid grid-cols-2 gap-2 px-4 sm:pt-7">
         {categoriesInfo?.map((item, index) => (
-          <ProductsCatList key={index} img={item.img} parentCatName = {parentCatName} subtitle={item.subtitle} title={item.title}/>
+          <ProductsCatList hasLink = {true} imgLayoutHeight="sm:h-[150px]" key={index} img={item.img} parentCatName = {parentCatName} subtitle={item.subtitle} title={item.title}/>
         ))}
       </ul>
     </>

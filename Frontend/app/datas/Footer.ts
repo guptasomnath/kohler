@@ -1,7 +1,7 @@
 export const footerOptions = {
     address: [
-      {title : "+91 9073688488", link : null},
-      {title : "kohler.saltlake@gmail.com", link : null},
+      {title : "9831234910", link : null},
+      {title : "subrata.ash@gmail.com", link : null},
       {title : "BA-46, Saltlake, Sector -1, Kolkata : 700064", link : null},
     ],
 

@@ -5,11 +5,12 @@ import React, { useState } from "react";
 
 import { useDispatch } from "react-redux";
 import { setMobileMenuVisibility } from "../redux/slices/mobileMenu";
+import { FaPhone } from "react-icons/fa6";
 
 import Link from "next/link";
 import NavDropDownItem from "./NavDropDownItem";
 import SearchField from "./Navbar/SearchField";
-import WebSiteLogo from "@/public/BLOK_LOGO.svg";
+import LOGO from "@/public/Premium-Bathware.png";
 import { BASE_URL } from "@/constant";
 
 const NAV_ITEM_CSS =
@@ -30,32 +31,56 @@ function Navbar() {
           <Link
             className={`${
               searchIconVisibility ? "sm:block" : "sm:hidden"
-            } sm:pl-5`}
+            } sm:pl-3`}
             href="/"
           >
-            <Image
-              className="z-10 sm:size-[90px]"
-              src={WebSiteLogo}
-              alt="website logo"
-              height={120}
-              width={120}
-            />
+            <div className="hidden sm:block">
+              <Image
+                className="z-10"
+                src={LOGO}
+                alt="website logo"
+                height={165}
+                width={165}
+              />
+            </div>
+            <div className="sm:hidden">
+              <Image
+                className="z-10"
+                src={LOGO}
+                alt="website logo"
+                height={265}
+                width={265}
+              />
+            </div>
           </Link>
         </div>
         <nav className="flex-grow sm:hidden">
           <ul className="flex gap-7 items-center justify-center text-sm relative">
+            <li className={NAV_ITEM_CSS}>
+              <Link href="/">Home</Link>
+            </li>
             <NavDropDownItem optionname="Bathroom" />
             <NavDropDownItem optionname="Kitchen" />
             <li className={NAV_ITEM_CSS}>
-              <Link href="/about">About us</Link>
+              <Link href="/about-us">About us</Link>
             </li>
             <li className={NAV_ITEM_CSS}>
-              <Link href={BASE_URL + "/Kohler-Retail-Book-2022.pdf"} target="_blank">
+              <Link
+                href={BASE_URL + "/Kohler-Retail-Book-2022.pdf"}
+                target="_blank"
+              >
                 Download Catalogue
               </Link>
             </li>
           </ul>
         </nav>
+
+        <Link href="tel:9831234910" className="sm:hidden">
+          <div className="flex items-center gap-2">
+            <FaPhone size={13} color="#474646" />{" "}
+            <span className="text-sm text-[#474646]">9831234910</span>
+          </div>
+        </Link>
 
         <SearchField
           onMobileMenuClicked={onMobileMenuBtnClick}

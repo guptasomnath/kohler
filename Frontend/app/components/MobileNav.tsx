@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setMobileMenuVisibility } from "../redux/slices/mobileMenu";
 import { RootState } from "../redux/store";
 import { BASE_URL } from "@/constant";
+import { FaPhone } from "react-icons/fa6";
 
 function MobileNav() {
   const mobileMenu = useSelector((state: RootState) => state.mobileMenu);
@@ -16,20 +17,26 @@ function MobileNav() {
   return (
     <div
       onClick={() => dispatch(setMobileMenuVisibility(false))}
-      className={`hidden w-full h-full bg-[#0000005e] absolute top-0 bottom-0 z-40 ${
+      className={`hidden w-full absolute top-0 bottom-0 z-40 ${
         mobileMenu ? "sm:block" : "hidden"
       }`}
     >
       <div className="relative h-full">
         <nav
           onClick={(e) => e.stopPropagation()}
-          className="w-1/2 bg-white sm:h-full absolute right-0 border-l-2"
+          className="w-[70%] bg-white absolute right-0 top-[3.8rem] shdow border pb-4"
         >
-          <ul className="flex flex-col gap-3 px-4 pt-8">
-            <NavDropDownItem optionname="Bathroom" />
-            <li className={NAV_ITEM_CSS}>Support</li>
+          <ul className="flex flex-col gap-3 px-4 pt-4">
             <li className={NAV_ITEM_CSS}>
-              <Link href="/about">About us</Link>
+              <Link href="/">Home</Link>
+            </li>
+            <NavDropDownItem optionname="Bathroom" />
+            <NavDropDownItem optionname="Kitchen" />
+            <li
+              onClick={() => dispatch(setMobileMenuVisibility(false))}
+              className={NAV_ITEM_CSS}
+            >
+              <Link href="/about-us">About us</Link>
             </li>
             <li className={NAV_ITEM_CSS}>
               <Link
@@ -39,6 +46,12 @@ function MobileNav() {
                 Download Catalogue
               </Link>
             </li>
+            <Link href="tel:9831234910">
+              <div className="flex items-center gap-2">
+                <FaPhone size={13} color="#474646" />{" "}
+                <span className="text-sm text-[#474646]">9831234910</span>
+              </div>
+            </Link>
           </ul>
         </nav>
       </div>

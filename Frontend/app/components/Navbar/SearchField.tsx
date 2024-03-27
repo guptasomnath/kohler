@@ -5,6 +5,8 @@ import { GrClose } from "react-icons/gr";
 import { RiSearch2Line } from "react-icons/ri";
 import { VscMenu } from "react-icons/vsc";
 import SearchAutoComplete from "./SearchAutoComplete";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/redux/store";
 
 interface IProps {
   onMobileMenuClicked : () => void,
@@ -17,6 +19,8 @@ export default function SearchField({onMobileMenuClicked, searchIconVisibility, 
     setSearchIconVisibility(!searchIconVisibility);
   };
 
+  const mobileMenuVisibility = useSelector((state : RootState) => state.mobileMenu);
+
   return (
     <div className="relative">
       <button
@@ -26,7 +30,10 @@ export default function SearchField({onMobileMenuClicked, searchIconVisibility, 
       >
         {/* <span className="text-xs sm:hidden">Search</span> */}
         {/* <RiSearch2Line onClick={handelSearchIcon} size={18} className="sm:size-[25px]" /> */}
-        <VscMenu onClick={onMobileMenuClicked} className="hidden sm:block sm:size-[25px] mr-4" />
+        {
+          mobileMenuVisibility ? <GrClose className="sm:size-[20px] sm:mr-4"/> : <VscMenu onClick={onMobileMenuClicked} className="hidden sm:block sm:size-[25px] mr-4" />
+        }
+        {/* <VscMenu onClick={onMobileMenuClicked} className="hidden sm:block sm:size-[25px] mr-4" /> */}
         <GrClose className="hidden" />
       </button>
 

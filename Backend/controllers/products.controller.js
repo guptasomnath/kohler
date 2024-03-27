@@ -5,13 +5,43 @@ const {
   fetchDataFromMultipleTableQuery,
 } = require("../utils/fetchDataFromTables");
 
-const getAllProducts = async (req, res) => {
+const totalPagesCache = new Map();
+
+const getProduct = async (req, res) => {
   let catname = req.query.catname.trim();
 
-  // const d = ""; d.toLowerCase()
+  if (!catname)
+    return res.status(400).json(new ApiResponse(400, "catname is required"));
 
-  // catname = catname.replaceAll(" ", "_").replaceAll("&", "_").toLowerCase();
-  // console.log(catname.t)
+  const page = parseInt(req.query.page || "0");
+  const limit = 16;
+
+  try {
+    if (!totalPagesCache.has(catname)) {
+      const totalRecords = await query(
+        `SELECT COUNT(*) AS total_rows FROM ${catname}`
+      );
+      const totalPages = Math.ceil(totalRecords[0].total_rows / limit);
+      totalPagesCache.set(catname, totalPages);
+    }
+    const skip = (page - 1) * limit;
+
+    const datas = await query(
+      `SELECT * from ${catname} LIMIT ${limit} OFFSET ${skip}`
+    );
+    res.status(200).json(
+      new ApiResponse(200, "Success", {
+        products: datas,
+        pages: totalPagesCache.get(catname),
+      })
+    );
+  } catch (error) {
+    res.status(400).json(new ApiResponse(400, error.message, error));
+  }
+};
+
+const getAllProducts = async (req, res) => {
+  let catname = req.query.catname.trim();
 
   if (!catname)
     return res.status(400).json(new ApiResponse(400, "catname is required"));
@@ -26,10 +56,12 @@ const getAllProducts = async (req, res) => {
     const totalRecords = await query(
       `SELECT COUNT(*) AS total_rows FROM ${catname}`
     );
-    res.status(200).json({
-      products: datas,
-      pages: Math.ceil(totalRecords[0].total_rows / limit),
-    });
+    res.status(200).json(
+      new ApiResponse(200, "Success", {
+        products: datas,
+        pages: Math.ceil(totalRecords[0].total_rows / limit),
+      })
+    );
   } catch (error) {
     res.status(400).json(new ApiResponse(400, error.message, error));
   }
@@ -79,4 +111,5 @@ module.exports = {
   getAllProducts,
   storeData,
   getProducts,
+  getProduct,
 };

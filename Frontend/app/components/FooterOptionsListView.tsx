@@ -11,10 +11,10 @@ function FooterOptionsList() {
         <FooterOptionItem options={footerOptions.navigation} />
       </div>
 
-      <div>
+      {/* <div className="sm:w-full">
         <p className="text-white pb-1">Address</p>
         <FooterOptionItem options={footerOptions.address} />
-      </div>
+      </div> */}
     </div>
   );
 }

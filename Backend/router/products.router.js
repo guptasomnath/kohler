@@ -1,11 +1,17 @@
 const express = require("express");
-const { getAllProducts, storeData, getProducts } = require("../controllers/products.controller");
+const {
+  getAllProducts,
+  storeData,
+  getProducts,
+  getProduct,
+} = require("../controllers/products.controller");
 
 const productRoute = express.Router();
 
-"/products/{catname}"
+("/products/{catname}");
 
-productRoute.get("/", getAllProducts);
+// productRoute.get("/", getAllProducts);
+productRoute.get("/", getProduct);
 productRoute.post("/test", getProducts);
 productRoute.get("/store", storeData);
 

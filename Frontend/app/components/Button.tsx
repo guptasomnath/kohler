@@ -13,7 +13,7 @@ function Button(attributes: IProps) {
   return (
     <button
       {...attributes}
-      className="text-white border px-4 py-2 mt-6 hover:bg-[#d8d6d6] hover:font-medium hover:text-[#000] transition-all duration-300 font-extralight sm:text-sm"
+      className="text-white border px-4 py-2 mt-6 hover:bg-[#d8d6d6] hover:font-medium hover:text-[#000] font-extralight sm:text-sm"
     >
       {attributes.text}
     </button>

@@ -51,20 +51,20 @@ function CollectionsListview() {
         </p>
         <ul className="grid grid-cols-2 gap-6 mt-5 sm:grid-cols-1">
           <CollectionsList
-            link={`${BASE_URL}/products/New Launches/New Launches`}
+            link={`${BASE_URL}/products/new-launches/new-launches`}
             text="NEW LAUNCHES"
             subText="Discover innovative bathroom products: sleek faucets, luxurious showerheads, eco-friendly toilets, and stylish bathroom solutions in our latest launches."
             imageUrl={BASE_URL + "/newlaunches/image0_0.jpg"}
           />
           <CollectionsList
-            link={`${BASE_URL}/products/Basin Area/Basin`}
+            link={`${BASE_URL}/basin-area/basin`}
             text="BASIN PRODUCTS"
             subText="Indulge in luxury with our fancy basin products. Elevate your bathroom and shop now for opulent style and sophistication!"
             imageUrl={BASE_URL + "/basins/basin.jpg"}
           />
 
           <CollectionsList
-            link={`${BASE_URL}/products/Toilet Area/Toilets`}
+            link={`${BASE_URL}/toilet-area/toilets`}
             text="TOILET PRODUCTS"
             subText="Upgrade your bathroom experience with our premium toilet products, ensuring ultimate comfort and cleanliness. Shop now for luxury and convenience!"
             imageUrl={BASE_URL + "/toilet/image0_0.jpg"}
@@ -78,7 +78,7 @@ function CollectionsListview() {
           /> */}
 
           <CollectionsList
-            link={`${BASE_URL}/products/Kitchen Faucet/Kitchen Faucet`}
+            link={`${BASE_URL}/kitchen-faucet/kitchen-faucet`}
             text="KITCHEN PRODUCTS"
             subText="Upgrade your kitchen with premium faucets for style and functionality. Elevate your space today."
             imageUrl={BASE_URL + "/kitchen/image0_0.jpg"}
@@ -92,15 +92,16 @@ function CollectionsListview() {
         <p className="w-full text-center text-slate-700 font-thin pt-[8px] text-[18px] sm:text-[13px]">
           Our primary emphasis is crafting premium bathroom products with
           design, sustainability, functionality, and comfort.{" "}
-          <Link className="text-blue-500 font-medium" href="/about">
+          <Link className="text-blue-500 font-medium" href="/about-us">
             Learn more.
           </Link>
         </p>
 
-        <ul className="w-full py-10 sm:hidden grid grid-cols-4 gap-6">
+        <ul className="w-full py-10 grid grid-cols-4 gap-6 sm:grid-cols-1">
           {/* <Carousel datasLength={3}> */}
           {homeCarasulDatas.map((item) => (
             <ProductsCatList
+              hasLink = {false}
               className="w-auto"
               key={item.id}
               parentCatName={"parentCatName"}

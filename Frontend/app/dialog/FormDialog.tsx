@@ -126,9 +126,9 @@ function FormDialog() {
         {successMsg}
       </p>
       <div className="mt-5 flex items-center justify-center gap-5">
-        <Link href="tel-9831234910" className="flex items-center gap-1">
+        <Link href="tel:9831234910" className="flex items-center gap-1">
           <IoCall size={13} className="text-gray-500" />
-          <span className="text-xs text-gray-500">+91 9831234910</span>
+          <span className="text-xs text-gray-500">9831234910</span>
         </Link>
 
         <Link

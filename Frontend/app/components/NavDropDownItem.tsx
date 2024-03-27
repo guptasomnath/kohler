@@ -13,7 +13,7 @@ function NavDropDownItem({ optionname }: IProps) {
         <li className="hover:text-gray-500 transition-all duration-[.3s] cursor-pointer">
           {optionname}
         </li>
-        <IoMdArrowDropdown className={`group-hover:rotate-180 hidden sm:block`} />
+        <IoMdArrowDropdown className={`group-hover:rotate-180 hidden sm:block sm:size-5`} />
       </div>
       <NavOptions optionname={optionname}/>
     </div>

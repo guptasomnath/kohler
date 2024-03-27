@@ -1,1 +1,1 @@
-export const BASE_URL = "http://192.168.0.103:3000"; //https://premiumbathware.com
+export const BASE_URL = "https://premiumbathware.com"; //https://premiumbathware.com

@@ -25,7 +25,7 @@ function page() {
           kitchen essentials, we pride ourselves on delivering exquisite designs
           and unparalleled quality to enhance your living spaces. <br />
           <br /> At Premium Bathware, we understand the significance of creating
-          environments that reflect your unique taste and lifestyle. That's why
+          environments that reflect your unique taste and lifestyle. That&apos;s why
           we meticulously curate our collection to encompass a wide array of
           stylish and innovative products, ranging from sleek faucets and
           designer sinks to opulent bath accessories and state-of-the-art
@@ -33,7 +33,7 @@ function page() {
           <br /> Our commitment to excellence extends beyond just aesthetics. We
           prioritize the use of premium materials and cutting-edge technology to
           ensure durability, performance, and sustainability in all our
-          offerings. Whether you're renovating your home or embarking on a new
+          offerings. Whether you&apos;re renovating your home or embarking on a new
           construction project, our products are engineered to exceed your
           expectations in both form and function. <br />
           <br /> As a customer-centric brand, we strive to provide exceptional

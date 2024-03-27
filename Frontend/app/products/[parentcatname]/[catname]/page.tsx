@@ -30,12 +30,10 @@ export default function Page({
   return (
     <div className="bg-white">
       <div>
-        <MobileFilterMenu
+        {/* <MobileFilterMenu
           parentCatName={parentCatName}
-          setMobileFiltersOpen={setMobileFiltersOpen}
           catName={catName}
-          mobileFiltersOpen={mobileFiltersOpen}
-        />
+        /> */}
         <main className="mx-auto max-w-7xl px-8 sm:px-3">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:pl-4">

@@ -27,8 +27,8 @@ function Footer() {
           <div>
             <p className="text-white pb-1">Bathroom</p>
             <ul>
-              {navOptions.Bathroom.map((item) => (
-                <li className="text-gray-400 pb-2 text-sm">
+              {navOptions.Bathroom.map((item, index) => (
+                <li key={index} className="text-gray-400 pb-2 text-sm">
                   <Link href={BASE_URL + "/" + item.title.replaceAll(" ", "-").toLowerCase()}>
                     {item.title}
                   </Link>
@@ -39,8 +39,8 @@ function Footer() {
           <div>
             <p className="text-white">Kitchen</p>
             <ul>
-              {navOptions.Kitchen.map((item) => (
-                <li className="text-gray-400 pb-2 text-sm">
+              {navOptions.Kitchen.map((item, index) => (
+                <li key={index} className="text-gray-400 pb-2 text-sm">
                   <Link href={BASE_URL + "/" + item.title}>{item.title}</Link>
                 </li>
               ))}

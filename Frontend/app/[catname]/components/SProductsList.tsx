@@ -38,6 +38,7 @@ async function SProductsList({ catName, pageNum, parentCatName }: IProps) {
         {totalPages === 1 ? null : (
           <SPagination
             catName={catName}
+            totalPages={totalPages}
             currentPage={pageNum}
             parentCatName={parentCatName}
           />

@@ -72,10 +72,10 @@ function page() {
         <p className="w-full text-center pt-10 text-1xl">
           FEEL FREE TO CONTACT US
         </p>
-        <div className="mt-5 flex items-center justify-center gap-8">
+        <div className="mt-5 flex items-center justify-center gap-8 sm:gap-8">
           <Link href="tel:9831234910" className="flex items-center gap-1">
             <IoCall size={13} className="text-gray-500" />
-            <span className="text-lg text-gray-500">9831234910</span>
+            <span className="text-lg text-gray-500 sm:text-sm">9831234910</span>
           </Link>
 
           <Link
@@ -83,7 +83,7 @@ function page() {
             className="flex items-center gap-1"
           >
             <MdMarkEmailRead size={13} className="text-gray-500" />
-            <span className="text-lg text-gray-500">subrata.ash@gmail.com</span>
+            <span className="text-lg text-gray-500 sm:text-sm">subrata.ash@gmail.com</span>
           </Link>
         </div>
       </section>

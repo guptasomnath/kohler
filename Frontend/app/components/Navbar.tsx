@@ -9,7 +9,7 @@ import { FaPhone } from "react-icons/fa6";
 
 import Link from "next/link";
 import NavDropDownItem from "./NavDropDownItem";
-import LOGO from "@/public/Premium-Bathware.png";
+import LOGO from "@/public/Premium-Bathware.svg";
 import { BASE_URL } from "@/constant";
 import SearchField from "./Navbar/SearchField";
 

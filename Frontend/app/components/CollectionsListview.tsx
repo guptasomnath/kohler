@@ -49,7 +49,7 @@ function CollectionsListview() {
         </p>
         <ul className="grid grid-cols-2 gap-6 mt-5 sm:grid-cols-1">
           <CollectionsList
-            link={`${BASE_URL}/products/new-launches/new-launches`}
+            link={`${BASE_URL}/new-launches/new-launches`}
             text="NEW LAUNCHES"
             subText="Discover innovative bathroom products: sleek faucets, luxurious showerheads, eco-friendly toilets, and stylish bathroom solutions in our latest launches."
             imageUrl={BASE_URL + "/newlaunches/image0_0.jpg"}
@@ -68,7 +68,7 @@ function CollectionsListview() {
             imageUrl={BASE_URL + "/toilet/image0_0.jpg"}
           />
           <CollectionsList
-            link={`${BASE_URL}/kitchen-faucet/kitchen-faucet`}
+            link={`${BASE_URL}/kitchen-area/kitchen-faucet`}
             text="KITCHEN PRODUCTS"
             subText="Upgrade your kitchen with premium faucets for style and functionality. Elevate your space today."
             imageUrl={BASE_URL + "/kitchen/image0_0.jpg"}

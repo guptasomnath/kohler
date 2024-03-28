@@ -86,7 +86,7 @@ export const navOptions = {
   ],
   Kitchen: [
     {
-      title: "Kitchen Faucet",
+      title: "Kitchen Area",
       bannerIMG: "https://s7d1.scene7.com/is/image/kohlergbhcloudprod/Short-Hero-aaf14425:Short-Hero-S-Desktop?op_sharpen=1&wid=1440&hei=636&dpr=off",
       subtitle: "Combining sophisticated style with cutting-edge technology, Kohler kitchen faucets offer ultimate durability.",
       child: [

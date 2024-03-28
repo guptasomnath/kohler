@@ -6,7 +6,7 @@ import { MyProvider } from "./redux/provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kohler",
+  title: "Premium Bathware",
   description: "This is for demo",
 };
 

@@ -1,8 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import TilesImg from "@/public/tiles.jpg";
 import SocialLinks from "./SocialLinks";
-import FooterOptionsList from "./FooterOptionsListView";
 import FooterOptionItem from "./FooterOptionItem";
 import { footerOptions } from "../datas/Footer";
 import Link from "next/link";
@@ -25,23 +22,43 @@ function Footer() {
 
         <div className="w-96 h-full flex items-start gap-9 sm:gap-14">
           <div>
-            <p className="text-white pb-1">Bathroom</p>
+            <p className="text-white pb-1">BATHROOM</p>
             <ul>
               {navOptions.Bathroom.map((item, index) => (
                 <li key={index} className="text-gray-400 pb-2 text-sm">
-                  <Link href={BASE_URL + "/" + item.title.replaceAll(" ", "-").toLowerCase()}>
-                    {item.title}
-                  </Link>
+                  {item.title.includes("New Launches") ? (
+                    <Link
+                      href={
+                        BASE_URL +
+                        "/" +
+                        item.title.replaceAll(" ", "-").toLowerCase() +
+                        "/" +
+                        item.title.replaceAll(" ", "-").toLowerCase()
+                      }
+                    >
+                      {item.title}
+                    </Link>
+                  ) : (
+                    <Link
+                      href={
+                        BASE_URL +
+                        "/" +
+                        item.title.replaceAll(" ", "-").toLowerCase()
+                      }
+                    >
+                      {item.title}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <p className="text-white">Kitchen</p>
+            <p className="text-white">KITCHEN</p>
             <ul>
               {navOptions.Kitchen.map((item, index) => (
                 <li key={index} className="text-gray-400 pb-2 text-sm">
-                  <Link href={BASE_URL + "/" + item.title}>{item.title}</Link>
+                  <Link href={BASE_URL + "/" + item.title.replaceAll(" ", "-").toLowerCase()}>{item.title}</Link>
                 </li>
               ))}
             </ul>
@@ -51,7 +68,7 @@ function Footer() {
         <div className="space-y-6">
           <SocialLinks />
           <div className="sm:w-full">
-            <p className="text-white pb-1">Address</p>
+            <p className="text-white pb-1">ADDRESS</p>
             <FooterOptionItem options={footerOptions.address} />
           </div>
           <p className="text-yellow-400 text-xs">
@@ -61,10 +78,6 @@ function Footer() {
           </p>
         </div>
       </div>
-      {/* <div className="border-t-[1px] border-[#333333] mt-20 flex items-center pt-9 justify-between font-[200] text-xs text-[#fff] sm:flex-col sm:text-center sm:gap-3">
-        <span>© 2023 - 2024 Premium Bathware</span>
-        <span>Digital Partner: OMM DIGITAL SOLUTION PVT. LTD</span>
-      </div> */}
     </footer>
   );
 }

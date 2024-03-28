@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.banner-back {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../public/banner1.png");
-}
-
-.checkBoxClass {
-  width: auto;
-}
-
-.menuOptionsOpenAnim {
-  animation: menuOpen 0.1s ease-in-out;
-}
-
-.searchBoxShdow {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-}
 
 .carouselShdow {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -40,63 +21,6 @@
   }
 }
 
-.banner1FadeIn {
-  animation: bannerFadeIn 1.8s ease;
-}
-
-@keyframes banner1FadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-    display: hidden;
-  }
-}
-
-.banner2FadeIn {
-  animation: bannerFadeIn 1.8s ease;
-}
-
-@keyframes banner2FadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.banner3FadeIn {
-  animation: bannerFadeIn 1.8s ease;
-}
-
-@keyframes banner3FadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.bannerFadeOut {
-  animation-delay: 2s;
-  animation: bannerFadeOut 0s ease;
-}
-
-@keyframes bannerFadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .banner .img {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -105,137 +29,6 @@
 
 .banner .img.active {
   opacity: 1;
-}
-
-@keyframes menuOpen {
-  0% {
-    height: 110px;
-  }
-
-  10% {
-    height: 120px;
-  }
-
-  20% {
-    height: 130px;
-  }
-
-  30% {
-    height: 140px;
-  }
-
-  40% {
-    height: 150px;
-  }
-
-  50% {
-    height: 160px;
-  }
-
-  70% {
-    height: 170px;
-  }
-
-  80% {
-    height: 180px;
-  }
-
-  90% {
-    height: 190px;
-  }
-
-  100% {
-    height: auto;
-  }
-}
-
-/* HAMBURGER */
-
-.hamburger {
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 30px;
-  height: 30px;
-  position: relative;
-}
-
-.hamburger .bar {
-  padding: 0;
-  width: 30px;
-  height: 4px;
-  background-color: maroon;
-  display: block;
-  border-radius: 4px;
-  transition: all 0.4s ease-in-out;
-  position: absolute;
-}
-
-.bar1 {
-  top: 0;
-}
-
-.bar2,
-.bar3 {
-  top: 13.5px;
-}
-
-.bar3 {
-  right: 0;
-}
-
-.bar4 {
-  bottom: 0;
-}
-
-.hamburger2 .bar2,
-.hamburger3 .bar3,
-.hamburger4 .bar4 {
-  top: 13.5px;
-}
-
-.hamburger4 .bar5 {
-  bottom: 0px;
-}
-
-.hamburger4 .bar {
-  transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
-}
-
-.hamburger4 .bar2 {
-  width: 1px;
-  transform: rotate(90deg);
-  left: 13.5px;
-}
-
-.hamburger4 .bar3 {
-  width: 1px;
-  left: 13.5px;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar1 {
-  top: 13.5px;
-  background-color: transparent;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar2 {
-  left: 0px;
-  width: 30px;
-  transform: rotate(45deg);
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar3 {
-  left: 0;
-  width: 30px;
-  transform: rotate(-45deg);
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar4 {
-  background-color: transparent;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar5 {
-  bottom: 13.5px;
-  background-color: transparent;
 }
 
 .enqueryFormShdow {
@@ -248,63 +41,12 @@
   align-items: center;
 }
 
-.categoryNameAnimationStart {
-  animation: fadeIn 2s ease-in forwards;
-}
-
-.categoryNameAnimationEnd {
-  animation-delay: 30s;
-  animation: fadeout 2s ease-in forwards;
-}
-
-@keyframes addLatters {
-  0% {
-    letter-spacing: 10rem;
-  }
-
-  10% {
-    letter-spacing: 9rem;
-  }
-
-  20% {
-    letter-spacing: 8rem;
-  }
-
-  30% {
-    letter-spacing: 7rem;
-  }
-
-  40% {
-    letter-spacing: 6rem;
-  }
-
-  50% {
-    letter-spacing: 5rem;
-  }
-
-  70% {
-    letter-spacing: 4rem;
-  }
-
-  80% {
-    letter-spacing: 3rem;
-  }
-
-  90% {
-    letter-spacing: 2rem;
-  }
-
-  100% {
-    letter-spacing: 1rem;
-  }
-}
-
 .fadeInAnimation {
   animation-delay: 0.8s;
-  animation: fadeIn 0.5s ease-in forwards;
+  animation: newFadeIn 0.5s ease-in forwards;
 }
 
-@keyframes fadeIn {
+@keyframes newFadeIn {
   0% {
     opacity: 0;
   }
@@ -312,73 +54,4 @@
   100% {
     opacity: 1;
   }
-}
-
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.slideFromRight {
-  animation: slideRight 0.3s ease forwards;
-}
-
-.slideToLeft {
-  animation: slideToLeft 0.3s ease forwards;
-}
-
-.hideSliderBackgroundAfterDealy {
-  animation: hideAfterDealy 0.8s ease forwards;
-}
-
-.cardShdow {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.productsCardShdow {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-@keyframes hideAfterDealy {
-  from {
-  }
-  to {
-    display: none;
-  }
-}
-
-@keyframes slideRight {
-  from {
-    width: 0px;
-  }
-
-  to {
-    width: 500px;
-  }
-}
-
-@keyframes slideToLeft {
-  from {
-    width: 500px;
-  }
-
-  to {
-    width: 0;
-  }
-}
-
-.testingANi {
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

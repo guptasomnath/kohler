@@ -1,6 +1,5 @@
 import React from "react";
 import { GrNext, GrPrevious } from "react-icons/gr";
-import { API_BASE_URL } from "@/utils/API_BASE_URL";
 import Link from "next/link";
 import { BASE_URL } from "@/constant";
 

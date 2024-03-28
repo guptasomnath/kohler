@@ -1,6 +1,5 @@
 "use client";
 
-import { current } from "@reduxjs/toolkit";
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 
 import { GrNext } from "react-icons/gr";

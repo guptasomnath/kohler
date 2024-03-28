@@ -1,5 +1,4 @@
 import { IFilter } from "@/types/products";
-import { API_BASE_URL } from "@/utils/API_BASE_URL";
 import datas from "@/public/datas.json";
 import Link from "next/link";
 import { BASE_URL } from "@/constant";
@@ -7,7 +6,7 @@ import { BASE_URL } from "@/constant";
 interface IProps {
   parentCatName: string;
   catName: string;
-  fromClassName? : string
+  fromClassName?: string;
 }
 
 function SFilters({ catName, parentCatName, fromClassName }: IProps) {
@@ -26,7 +25,9 @@ function SFilters({ catName, parentCatName, fromClassName }: IProps) {
         filters[0].options.push({
           value: eachItem.title,
           label: eachItem.title,
-          checked: eachItem.title.toLowerCase() === catName.toLowerCase().replaceAll("-", " "),
+          checked:
+            eachItem.title.toLowerCase() ===
+            catName.toLowerCase().replaceAll("-", " "),
         });
       });
     }
@@ -40,14 +41,19 @@ function SFilters({ catName, parentCatName, fromClassName }: IProps) {
           <div key={section.id} className="space-y-4">
             {section.options.map((option, optionIdx) => (
               <div key={option.value} className="flex items-center">
-                <Link href={`${BASE_URL}/${parentCatName.replaceAll(" ", "-").toLowerCase()}/${option.label.replaceAll(" ", "-").toLowerCase()}/1`}>
+                <Link
+                  href={`${BASE_URL}/${parentCatName
+                    .replaceAll(" ", "-")
+                    .toLowerCase()}/${option.label
+                    .replaceAll(" ", "-")
+                    .toLowerCase()}/1`}
+                >
                   <input
-                    //   onChange={(e) => onCheckBoxChanged(e)}
                     id={`filter-${section.id}-${optionIdx}`}
                     name={`${section.id}[]`}
                     value={option.value}
                     type="checkbox"
-                    checked={option.checked}
+                    defaultChecked={option.checked}
                     className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                   />
                   <label

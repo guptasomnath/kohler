@@ -9,9 +9,9 @@ import { FaPhone } from "react-icons/fa6";
 
 import Link from "next/link";
 import NavDropDownItem from "./NavDropDownItem";
-import SearchField from "./Navbar/SearchField";
 import LOGO from "@/public/Premium-Bathware.png";
 import { BASE_URL } from "@/constant";
+import SearchField from "./Navbar/SearchField";
 
 const NAV_ITEM_CSS =
   "hover:text-gray-500 transition-all duration-[.3s] cursor-pointer";

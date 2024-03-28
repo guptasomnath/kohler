@@ -48,7 +48,6 @@ function Banner() {
     >
       <div className="sm:hidden">
         {bannerList.map((imageUrl, index) => (
-          <>
             <Image
               key={index}
               height={1500}
@@ -59,15 +58,13 @@ function Banner() {
                 index === currentIndex ? "active" : ""
               } sm:h-[350px] sm:object-cover`}
             />
-          </>
         ))}
       </div>
 
       <div className="hidden sm:block">
         {mBannerList.map((imageUrl, index) => (
-          <>
             <Image
-              key={index}
+              key={index * 10}
               height={1500}
               width={1500}
               src={imageUrl}
@@ -76,7 +73,6 @@ function Banner() {
                 index === currentIndex ? "active" : ""
               } sm:h-[350px] sm:object-cover`}
             />
-          </>
         ))}
       </div>
     </div>

@@ -13,7 +13,6 @@ function HomeActionsBtn() {
   };
   return (
     <div className="flex items-center gap-4 slidUp">
-      {/* <Link href="/products/Testing"><Button text="Our collections" /></Link> */}
       <Button onClick={handleContactUsBtnClick} text="Contact us" />
     </div>
   );

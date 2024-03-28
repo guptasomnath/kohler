@@ -1,9 +1,10 @@
 "use client";
 
+import { setMobileFilterVisibility } from "@/app/redux/slices/mobileFilter";
 import { FunnelIcon } from "@heroicons/react/24/outline";
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
-import { setMobileFilterVisibility } from "../redux/slices/mobileFilter";
+
 
 function MobileFilterBtn() {
   const dispatch = useDispatch();

@@ -1,12 +1,9 @@
-import Filters from "@/app/newcomponents/Filters";
-import MobileFilterMenu from "@/app/newcomponents/MobileFilterMenu";
-import ProductsListview from "@/app/newcomponents/ProductsListview";
-import { FunnelIcon } from "@heroicons/react/20/solid";
 import { Suspense } from "react";
 import Loading from "@/app/components/Loading";
-import MobileFilterBtn from "@/app/newcomponents/MobileFilterBtn";
 import SFilters from "../../components/SFilters";
 import SProductsList from "../../components/SProductsList";
+import MobileFilterMenu from "@/app/components/MobileFilterMenu";
+import MobileFilterBtn from "@/app/components/MobileFilterBtn";
 
 export default function Page({
   params,
@@ -60,7 +57,6 @@ export default function Page({
 
               {/* Product grid */}
               <div className="col-span-5 sm:col-span-6">
-                {/* <ProductsListview catName={catName} /> */}
                 <Suspense fallback={<LoadingComp />}>
                   <SProductsList
                     catName={catName}
@@ -69,7 +65,6 @@ export default function Page({
                   />
                 </Suspense>
               </div>
-              {/* <InfiniteScrollComponent /> */}
             </div>
           </section>
         </main>

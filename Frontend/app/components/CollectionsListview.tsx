@@ -1,8 +1,6 @@
 import React from "react";
 import CollectionsList from "./CollectionsList";
-import { IMG1, IMG2, IMG3 } from "../constant";
 import { BASE_URL } from "@/constant";
-import Carousel from "./Carousel";
 import ProductsCatList from "./overview/ProductsCatList";
 import Link from "next/link";
 
@@ -69,14 +67,6 @@ function CollectionsListview() {
             subText="Upgrade your bathroom experience with our premium toilet products, ensuring ultimate comfort and cleanliness. Shop now for luxury and convenience!"
             imageUrl={BASE_URL + "/toilet/image0_0.jpg"}
           />
-          {/* <CollectionsList
-            text="BATHROOM PRODUCTS"
-            subText="Elevate your bathroom experience with our premium products. From luxurious towels to sleek fixtures, discover the perfect blend of style and functionality. Upgrade now!"
-            imageUrl={IMG3}
-            infoLayoutClass="w-1/2 py-5 px-[3rem] space-y-3 sm:w-full sm:px-5 sm:space-y-0 sm:pt-2"
-            className="col-span-2 sm:col-span-1"
-          /> */}
-
           <CollectionsList
             link={`${BASE_URL}/kitchen-faucet/kitchen-faucet`}
             text="KITCHEN PRODUCTS"
@@ -98,7 +88,6 @@ function CollectionsListview() {
         </p>
 
         <ul className="w-full py-10 grid grid-cols-4 gap-6 sm:grid-cols-1">
-          {/* <Carousel datasLength={3}> */}
           {homeCarasulDatas.map((item) => (
             <ProductsCatList
               hasLink = {false}

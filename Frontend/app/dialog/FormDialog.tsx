@@ -1,12 +1,12 @@
 import Input from "../components/Input";
-import React, { LegacyRef, MutableRefObject, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { useDispatch } from "react-redux";
 import { setPopupDialog } from "../redux/slices/popupDialgo";
 import { IoCall } from "react-icons/io5";
 import Link from "next/link";
 import { MdMarkEmailRead } from "react-icons/md";
-import { API_BASE_URL } from "@/utils/API_BASE_URL";
+import { sendMail } from "@/api/sendMail";
 
 function FormDialog() {
   const dispatch = useDispatch();
@@ -29,34 +29,13 @@ function FormDialog() {
     event.preventDefault();
     setIsSubmitting(true);
 
-    const requesturl = API_BASE_URL + "/sendmail";
-
-    try {
-      const response = await fetch(requesturl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          fullname: fullNameRef.current?.value,
-          email: emailRef.current?.value,
-          number: numberRef.current?.value,
-          message: messageRef.current?.value,
-        }),
-      });
-
-      const result = await response.json();
-      if (!response.ok) {
-        setError(result.message);
-        setSuccessMsg("");
-      } else {
-        setError("");
-        setSuccessMsg(result.message);
-      }
-    } catch (error) {
-      const err = error as Error;
-      setError(err.message);
-      setSuccessMsg("");
-    }
-
+    const result = await sendMail(
+      fullNameRef.current?.value,
+      emailRef.current?.value,
+      numberRef.current?.value,
+      messageRef.current?.value
+    );
+    setSuccessMsg("Mail has sended successfully");
     setIsSubmitting(false);
   };
 
@@ -77,12 +56,14 @@ function FormDialog() {
         />
       </div>
       <Input
+        name="full_name"
         referal={fullNameRef}
         placeholder="Full name"
         className="fadeInAnimation sm:text-sm"
       />
       <Input
         referal={emailRef}
+        name="email"
         placeholder="Email address"
         className="fadeInAnimation sm:text-sm"
       />
@@ -90,6 +71,7 @@ function FormDialog() {
         referal={numberRef}
         placeholder="Phone number"
         type="number"
+        name="number"
         inputMode="numeric"
         pattern="[0-9\s]{13,19}"
         className="fadeInAnimation sm:text-sm"
@@ -97,6 +79,7 @@ function FormDialog() {
       <textarea
         ref={messageRef}
         placeholder="Message"
+        name="message"
         className="px-3 outline-none py-2 border-2 w-full mt-5 text-sm sm:mt-4 fadeInAnimation sm:text-sm"
         cols={20}
         rows={5}
@@ -104,7 +87,7 @@ function FormDialog() {
       <button
         onClick={onFormSubmit}
         disabled={isSubmitting}
-        type="button"
+        type="submit"
         className={`px-4 py-2 w-full bg-blue-400 text-white font-medium mt-5 text-sm fadeInAnimation ${
           isSubmitting ? "bg-blue-200" : "bg-blue-400"
         }`}

@@ -31,7 +31,7 @@ function ProductsCatList({
               .replaceAll(" ", "-")}/${title
               .replaceAll(" ", "-")
               .toLowerCase()}`
-          : ""
+          : null
       }`}
     >
       <li
@@ -49,9 +49,9 @@ function ProductsCatList({
           />
         </div>
         <div className="px-5 pb-4">
-          <h1 className="font-semibold text-lg pt-4 line-clamp-1 sm:text-sm sm:font-bold">
+          <h2 className="font-semibold text-lg pt-4 line-clamp-1 sm:text-sm sm:font-bold">
             {title}
-          </h1>
+          </h2>
           <p className="text-sm text-gray-700 line-clamp-4 text-justify -tracking-[0.03em] sm:text-xs">
             {subtitle}
           </p>

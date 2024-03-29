@@ -38,15 +38,16 @@ function SFilters({ catName, parentCatName, fromClassName }: IProps) {
       {/* Filters */}
       <form className={`${fromClassName}`}>
         {filters?.map((section) => (
-          <div key={section.id} className="space-y-4">
+          <div key={section.id} className="space-y-5">
             {section.options.map((option, optionIdx) => (
-              <div key={option.value} className="flex items-center">
+              <div key={option.value} className="flex items-center cursor-pointer">
                 <Link
                   href={`${BASE_URL}/${parentCatName
                     .replaceAll(" ", "-")
                     .toLowerCase()}/${option.label
                     .replaceAll(" ", "-")
                     .toLowerCase()}/1`}
+                    className="flex items-center"
                 >
                   <input
                     id={`filter-${section.id}-${optionIdx}`}
@@ -54,7 +55,7 @@ function SFilters({ catName, parentCatName, fromClassName }: IProps) {
                     value={option.value}
                     type="checkbox"
                     defaultChecked={option.checked}
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
                   />
                   <label
                     htmlFor={`filter-${section.id}-${optionIdx}`}

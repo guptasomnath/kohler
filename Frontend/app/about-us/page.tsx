@@ -5,6 +5,12 @@ import { IoCall } from "react-icons/io5";
 import Link from "next/link";
 import { MdMarkEmailRead } from "react-icons/md";
 import AboutImage from "@/public/banner6.png";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Learn About Who We Are | Premium Bathware",
+  description: "Learn about us and our commitment to modern bathroom and kitchen solutions in Kolkata. Discover our mission, vision, and values. Contact us today!",
+};
 
 function page() {
   return (
@@ -17,7 +23,7 @@ function page() {
         width={1500}
       />
       <section className="px-40 pt-[3rem] sm:px-3 sm:pt-12">
-        <h1 className="font-[210] text-3xl pb-3">About Us</h1>
+        <h2 className="font-[210] text-3xl pb-3">About Us</h2>
         <p className="text-[14px] leading-[1.6">
           Welcome to Premium Bathware, where luxury meets functionality in every
           product we offer. As a leading brand in the realm of bathroom and

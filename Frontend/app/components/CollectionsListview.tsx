@@ -40,9 +40,9 @@ function CollectionsListview() {
   return (
     <>
       <div className="w-full min-h-[100vh] px-24 pt-10 sm:px-4">
-        <h1 className="w-full text-center text-4xl text-emerald-800 sm:text-2xl">
+        <h2 className="w-full text-center text-4xl text-emerald-800 sm:text-2xl">
           OUR COLLECTIONS
-        </h1>
+        </h2>
         <p className="w-full text-center text-slate-700 font-thin pt-[8px] text-[18px] sm:text-[13px]">
           Transform your bathroom into a lavish retreat with our exquisite range
           of premium products. Elevate luxury. Upgrade your bathroom today!
@@ -75,9 +75,9 @@ function CollectionsListview() {
           />
         </ul>
 
-        <h1 className="w-full text-center pt-10 text-4xl text-blue-600-800 sm:text-2xl">
+        <h2 className="w-full text-center pt-10 text-4xl text-blue-600-800 sm:text-2xl">
           Our primary emphasis
-        </h1>
+        </h2>
 
         <p className="w-full text-center text-slate-700 font-thin pt-[8px] text-[18px] sm:text-[13px]">
           Our primary emphasis is crafting premium bathroom products with

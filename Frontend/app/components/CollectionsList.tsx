@@ -31,9 +31,9 @@ function CollectionsList({
       />
       <div className={`absolute bottom-0 w-full bg-[#0c0c0c80] space-y-3`}>
         <div className={`px-5 py-8 sm:py-3 ${infoLayoutClass}`}>
-          <h1 className="font-semibold text-2xl sm:text-lg text-yellow-50">
+          <h2 className="font-semibold text-2xl sm:text-lg text-yellow-50">
             {text}
-          </h1>
+          </h2>
           <p className="text-[13px] text-gray-300 sm:text-[12px]">{subText}</p>
           <button className="text-white border text-xs px-4 py-2 mt-8 hover:bg-[#0000009a] hover:rounded-full transition-all duration-300 font-extralight sm:mt-2 sm:text-xs">
             <Link

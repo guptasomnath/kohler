@@ -7,11 +7,11 @@ interface IProps {
 
 function ShowMessage({ message, className }: IProps) {
   return (
-    <h1
+    <h2
       className={`font-semibold text-2xl text-center text-gray-700 w-full ${className}`}
     >
       {!message ? "No data avilable" : message}
-    </h1>
+    </h2>
   );
 }
 

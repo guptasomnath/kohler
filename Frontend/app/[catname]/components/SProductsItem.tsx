@@ -21,7 +21,7 @@ function SProductsItem({ productsInfo }: IProps) {
           />
         </div>
       </div>
-      <h3 className="text-sm text-gray-700">{productsInfo.title}</h3>
+      <h3 className="text-sm text-gray-700 pt-3">{productsInfo.title}</h3>
       <p className="mt-1 text-sm text-gray-500 line-clamp-2 h-11">
         {productsInfo.subtitle}
       </p>

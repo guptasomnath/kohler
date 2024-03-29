@@ -3,6 +3,32 @@ import React from "react";
 import OverviewCarousel from "../components/overview/OverviewCarousel";
 import datas from "@/public/datas.json";
 import { notFound } from "next/navigation";
+import type { Metadata } from 'next';
+
+const metadatas = [
+  {key : "basin-area", title : "Explore Basin Area Products in Kolkata | Premium Bathware", description : " Upgrade your basin area with premium faucets, mirrors, vanity fittings, and accessories in Kolkata. Explore our range at Premium Bathware. Get Quote Today!"},
+  {key : "showering-area", title : "Discover Showering Area Products in Kolkata | Premium Bathware", description : "Elevate your showering experience with hand showers, digital showers, fittings, and accessories in Kolkata. Explore now at Premium Bathware. Get Quote Today!"},
+  {key : "toilet-area", title : "Get Modern Toilet Area Products in Kolkata | Premium Bathware", description : "Upgrade your toilet area with premium toilet seats, smart toilets, cisterns, and accessories in Kolkata. Explore now at Premium Bathware. Get Quote Today!"},
+  {key : "smart-products", title : "Get Smart Bathroom Products in Kolkata | Premium Bathware", description : "Upgrade to smart toilets and electronic bidet seats in Kolkata with Premium Bathware. Get Quote Today! Experience luxury and innovation with our modern solutions."},
+  {key : "new-launches", title : "", description : ""},
+  {key : "commercial", title : "Get Commercial Bathroom Products in Kolkata | Premium Bathware", description : "Explore sensor faucets, urinal sensors, flush valves, shower doors, accessories, and customized mirrors in Kolkata with Premium Bathware. Get Quote Today!"},
+  {key : "wellness", title : "Explore Bathroom Wellness Products in Kolkata | Premium Bathware", description : "Transform your bathroom into a wellness retreat with steam systems, bathtubs, and fillers in Kolkata. Get a Quote Today! Elevate your space with Premium Bathware."},
+
+  {key : "kitchen-area", title : "Explore Modern Kitchen Accessories in Kolkata | Premium Bathware", description : "Discover modern kitchen faucets in Kolkata with Premium Bathware. Elevate your kitchen with our exquisite range. Get Quote Today!"},
+];
+
+
+export async function generateMetadata({ params }: { params: { catname: string } }): Promise<Metadata> {
+
+  const datas = metadatas.filter((item) => item.key.toLowerCase() === params.catname.toLowerCase());
+
+  if(datas.length === 0) return notFound();
+
+  return {
+    title: datas[0].title,
+    description : datas[0].description
+  }
+}
 
 export default function page({ params }: { params: { catname: string } }) {
   const pCatName = params.catname.toLowerCase().replaceAll("-", " ");
@@ -24,9 +50,9 @@ export default function page({ params }: { params: { catname: string } }) {
           width={1500}
         />
         <div className="absolute bottom-40 bg-[#29282891] w-[645px] ml-16 px-8 py-8 space-y-4 rounded-lg sm:w-[90%] sm:ml-3 sm:py-8">
-          <h1 className="text-4xl text-white font-semibold">
+          <h2 className="text-4xl text-white font-semibold">
             {mydata[0]?.title}
-          </h1>
+          </h2>
           <p className="text-white font-semibold">{mydata[0]?.subtitle}</p>
         </div>
       </div>

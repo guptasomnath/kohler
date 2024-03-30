@@ -10,7 +10,7 @@ interface IProps {
 
 function BreadCrumbNav({ crumbLists }: IProps) {
   return (
-    <div className="flex items-center gap-2 text-gray-700">
+    <div className="flex items-center gap-2 text-gray-700 sm:px-4">
       {crumbLists.map((item, index) => {
         if (index !== crumbLists.length - 1) {
           return (

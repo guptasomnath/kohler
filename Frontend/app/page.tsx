@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import BannerInfo from "./components/BannerInfo";
+import CollapsibleMenu from "./components/Collapsible/CollapsibleMenu";
 import CollectionsListview from "./components/CollectionsListview";
 import HomeActionsBtn from "./components/HomeActionsBtn";
 
@@ -22,6 +23,7 @@ export default function Home() {
         </div>
       </div>
       <CollectionsListview />
+      <CollapsibleMenu />
     </main>
   );
 }

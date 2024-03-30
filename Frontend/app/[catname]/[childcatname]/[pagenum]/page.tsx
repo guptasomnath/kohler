@@ -24,30 +24,30 @@ const metadatas = [
   {key : "shower-doors", title : "Explore All Types of Shower Doors in Kolkata | Premium Bathware", description : "Discover modern shower doors for your Kolkata bathroom at Premium Bathware. Elevate your space with our elegant selection. Get Quote Today!"},
   {key : "body-spray", title : "Explore All Body Spray Showers in Kolkata | Premium Bathware", description : "Transform your bathroom with modern body spray showers from Premium Bathware in Kolkata. Explore our collection and get a quote today for a refreshment!"},
   {key : "steam", title : "Explore All Bathroom Steams in Kolkata | Premium Bathware", description : "Discover modern steam showers and accessories for your Kolkata bathroom at Premium Bathware. Get a quote today for your perfect upgrade!"},
-  {key : "shower-fitting", title : "", description : ""},
+  {key : "shower-fitting", title : "Explore All Shower Fittings in Kolkata | Premium Bathware", description : "Transform your bathroom with modern shower fittings from Premium Bathware in Kolkata. Explore our collection now and get a quote today!"},
   {key : "bathroom-accessories", title : "Best Modern Bathroom Accessories in Kolkata | Premium Bathware", description : "Elevate your bathroom with our modern accessories. Explore Premium Bathware in Kolkata for premium solutions. Get a quote today!"},
   
-  {key : "toilets", title : "", description : ""},
-  {key : "toilet-seats", title : "", description : ""},
-  {key : "smart-toilet", title : "", description : ""},
-  {key : "cisterns-and-flushing", title : "", description : ""},
+  {key : "toilets", title : "Explore All Types of Toilets in Kolkata | Premium Bathware", description : "Explore all types of modern toilets for your bathroom at Premium Bathware in Kolkata. Choose the perfect one and get a quote today!"},
+  {key : "toilet-seats", title : "Buy Toilet Seats in Kolkata | Premium Bathware", description : "Discover modern toilet seats for your Kolkata bathroom at Premium Bathware. Elevate your bathroom with our premium selections. Get a quote today!"},
+  {key : "smart-toilet", title : "Buy Smart Toilets in Kolkata | Premium Bathware", description : "Shop from our collection of modern smart toilets for your bathroom in Kolkata. Explore Premium Bathware's range. Get Quote Today!"},
+  {key : "cisterns-and-flushing", title : "Buy Cisterns & Flushes in Kolkata | Premium Bathware", description : "Upgrade your bathroom with modern cisterns and flushing solutions from Premium Bathware in Kolkata. Explore our range and get a quote today!"},
   {key : "bathroom-accessories", title : "Best Modern Bathroom Accessories in Kolkata | Premium Bathware", description : "Elevate your bathroom with our modern accessories. Explore Premium Bathware in Kolkata for premium solutions. Get a quote today!"},
 
-  {key : "electronic-bidet-seats", title : "", description : ""},
+  {key : "electronic-bidet-seats", title : "Buy Electronic Toilet Seats in Kolkata | Premium Bathware", description : " Discover all types of modern electronic bidet toilet seats for your bathroom. Elevate your space with Premium Bathware in Kolkata. Get a quote today!"},
 
-  {key : "new-launches", title : "", description : ""},
+  {key : "new-launches", title : "Buy New Modern Bathroom Products in Kolkata | Premium Bathware", description : "Discover the latest new launches for your bathroom at Premium Bathware in Kolkata. Upgrade your bathroom today! Shop now for exclusive deals."},
 
-  {key : "sensor-faucets", title : "", description : ""},
-  {key : "urinals-sensors", title : "", description : ""},
-  {key : "flush-faucets-valves", title : "", description : ""},
-  {key : "shower-doors", title : "", description : ""},
-  {key : "customized-mirror", title : "", description : ""},
-  {key : "commercial-accessories", title : "", description : ""},
+  {key : "sensor-faucets", title : "Buy Commercial Sensor Faucets in Kolkata | Premium Bathware", description : "Discover modern sensor faucets & more for commercial bathrooms in Kolkata at Premium Bathware. Get a quote today! Explore our wide range."},
+  {key : "urinals-sensors", title : "Buy Commercial Urinal Sensors in Kolkata | Premium Bathware", description : "Upgrade your commercial bathroom in Kolkata with modern urinal sensors and more from Premium Bathware. Get a quote today!"},
+  {key : "flush-faucets-valves", title : "Buy Commercial Flush Faucets Valves in Kolkata | Premium Bathware", description : " Upgrade your Kolkata bathroom with our modern flush faucets, valves & more. Explore our premium collection for commercial use. Get a quote today!"},
+  {key : "shower-doors", title : "Explore All Types of Shower Doors in Kolkata | Premium Bathware", description : "Discover modern shower doors for your Kolkata bathroom at Premium Bathware. Elevate your space with our elegant selection. Get Quote Today!"},
+  {key : "customized-mirror", title : "Buy Customised Bathroom Mirrors in Kolkata | Premium Bathware", description : "Explore our modern, customized mirrors for commercial bathrooms in Kolkata. Get a quote today! Premium Bathware offers the finest selection."},
+  {key : "commercial-accessories", title : "Buy Customised Bathroom Accessories in Kolkata | Premium Bathware", description : "Elevate your commercial bathroom with modern accessories from Premium Bathware in Kolkata. Shop now for the latest designs. Get a quote today!"},
 
-  {key : "bathtubs", title : "", description : ""},
-  {key : "bathtub-fillers", title : "", description : ""},
+  {key : "bathtubs", title : "Buy Modern Bathtubs in Kolkata | Premium Bathware", description : "Discover modern bathtubs and more for your bathroom in Kolkata. Premium Bathware offers top-quality products. Get a quote today!"},
+  {key : "bathtub-fillers", title : "Buy Modern Bathtub Fillers in Kolkata | Premium Bathware", description : "Upgrade your bathroom with modern bathtub fillers from Premium Bathware in Kolkata. Explore our latest collection. Get a quote today!"},
 
-  {key : "kitchen-faucet", title : "", description : ""}
+  {key : "kitchen-faucet", title : "Buy Modern Kitchen Faucets in Kolkata | Premium Bathware", description : "Upgrade your kitchen with all types of modern kitchen faucets from Premium Bathware in Kolkata. Explore our collection. Get a quote today!"}
 ];
 
 export async function generateMetadata({

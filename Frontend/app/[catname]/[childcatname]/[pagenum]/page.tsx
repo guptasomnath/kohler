@@ -5,6 +5,7 @@ import MobileFilterBtn from "@/app/components/MobileFilterBtn";
 import { BASE_URL } from "@/constant";
 import { encodeUrl } from "@/utils/decodeUrl";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import SFilters from "../../components/SFilters";
 import BreadCrumbNav from "../../components/BreadCrumbNav";
 import SProductsList from "../../components/SProductsList";
@@ -58,9 +59,14 @@ export async function generateMetadata({
 
   const datas = metadatas.filter((item) => item.key.toLowerCase() === params.childcatname.toLowerCase());
 
+  if(datas.length === 0) return notFound();
+
   return {
     title: datas[0].title,
-    description : datas[0].description
+    description : datas[0].description,
+    alternates : {
+      canonical : `${BASE_URL}/${params.catname.toLowerCase()}/${params.childcatname.toLowerCase()}`
+    }
   }
 }
 

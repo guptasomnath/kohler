@@ -63,7 +63,10 @@ export async function generateMetadata({
 
   return {
     title: datas[0].title,
-    description : datas[0].description
+    description : datas[0].description,
+    alternates : {
+      canonical : `${BASE_URL}/${params.catname.toLowerCase()}/${params.childcatname.toLowerCase()}`
+    }
   }
 }
 

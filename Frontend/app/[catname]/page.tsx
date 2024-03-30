@@ -5,6 +5,7 @@ import datas from "@/public/datas.json";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { htmlContentList } from "../datas/htmlContentList";
+import { BASE_URL } from "@/constant";
 
 const metadatas = [
   {
@@ -67,6 +68,9 @@ export async function generateMetadata({
   return {
     title: datas[0].title,
     description: datas[0].description,
+    alternates : {
+      canonical : BASE_URL + "/" + params.catname
+    }
   };
 }
 

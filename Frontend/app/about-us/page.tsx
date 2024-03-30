@@ -6,10 +6,14 @@ import Link from "next/link";
 import { MdMarkEmailRead } from "react-icons/md";
 import AboutImage from "@/public/banner6.png";
 import type { Metadata } from 'next';
+import { BASE_URL } from "@/constant";
 
 export const metadata: Metadata = {
   title: "Learn About Who We Are | Premium Bathware",
   description: "Learn about us and our commitment to modern bathroom and kitchen solutions in Kolkata. Discover our mission, vision, and values. Contact us today!",
+  alternates : {
+    canonical : BASE_URL + "/about-us"
+  }
 };
 
 function page() {

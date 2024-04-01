@@ -101,6 +101,7 @@ export default function page({ params }: { params: { catname: string } }) {
           width={1500}
         /> */}
         <ShimmerImage
+          imageClass="sm:object-cover sm:h-[600px]"
           className="w-full sm:object-cover sm:h-[600px]"
           src={mydata[0]?.bannerbackground}
           alt="background img"

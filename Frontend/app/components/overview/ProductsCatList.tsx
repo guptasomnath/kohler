@@ -1,5 +1,4 @@
 import { BASE_URL } from "@/constant";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ShimmerImage from "../ShimmerImage";
@@ -24,6 +23,7 @@ function ProductsCatList({
   hasLink,
 }: IProps) {
   return (
+
     <Link
       href={`${
         hasLink

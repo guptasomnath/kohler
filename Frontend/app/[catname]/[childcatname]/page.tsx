@@ -9,6 +9,7 @@ import { BASE_URL } from "@/constant";
 import { encodeUrl } from "@/utils/decodeUrl";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import ProductsShimmer from "../components/ProductsShimmer";
 
 const metadatas = [
   {key : "basin", title : "Get the best Modern Basins in Kolkata | Premium Bathware", description : "Upgrade your bathroom with our premium basins. Get Quote Today! Explore modern basin solutions for your bathroom in Kolkata with Premium Bathware."},
@@ -131,7 +132,7 @@ export default function Page({
 
               {/* Product grid */}
               <div className="col-span-5 sm:col-span-6">
-                <Suspense fallback={<LoadingComp />}>
+                <Suspense fallback={<ProductsShimmer />}>
                   <SProductsList
                     catName={catName}
                     pageNum={pageNum}

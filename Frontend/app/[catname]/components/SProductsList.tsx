@@ -12,6 +12,7 @@ interface IProps {
 }
 
 async function SProductsList({ catName, pageNum, parentCatName }: IProps) {
+  // await new Promise((resolve) => setTimeout(() => resolve(""), 3000));
   const { isSuccess, error, response } = await getProducts(catName, pageNum);
 
   const datalength = response?.data.products.length || 0;

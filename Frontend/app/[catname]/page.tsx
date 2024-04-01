@@ -88,6 +88,7 @@ export default function page({ params }: { params: { catname: string } }) {
   const htmlContent =
     htmlContentList.filter((item) => item.key === params.catname)?.[0]
       ?.content || "";
+      
 
   return (
     <>

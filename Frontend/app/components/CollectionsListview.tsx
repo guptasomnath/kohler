@@ -130,6 +130,7 @@ function CollectionsListview() {
         <ul className="w-full py-10 grid grid-cols-4 gap-6 sm:grid-cols-1">
           {homeCarasulDatas.map((item, index) => (
             <IntersectionObserverComponent
+              key={item.id}
               className={`duration-[1s]`}
               beforeAnimation={item.beforeAnimation}
               afterAnimation={item.afterAnimation}
@@ -137,7 +138,6 @@ function CollectionsListview() {
               <ProductsCatList
                 hasLink={false}
                 className="w-auto"
-                key={item.id}
                 parentCatName={"parentCatName"}
                 img={item.img}
                 subtitle={item.subtitle}

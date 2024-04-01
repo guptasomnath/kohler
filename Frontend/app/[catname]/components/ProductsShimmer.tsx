@@ -6,8 +6,8 @@ function ProductsShimmer() {
 
   return (
     <ul className="mt-6 grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-1 lg:grid-cols-4 xl:gap-x-8 sm:px-8">
-      {parr.map((item) => (
-        <li>
+      {parr.map((item, index) => (
+        <li key={index}>
           <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-300 lg:aspect-none group-hover:opacity-75 lg:h-80">
             <div className="bg-[#ffffff94] animate-pulse h-[240px] w-full lg:h-full lg:w-full"></div>
           </div>

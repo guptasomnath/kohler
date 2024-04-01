@@ -17,8 +17,8 @@ export default async function query(sql: string) {
 
   const query = promisify(connection.query).bind(connection);
   const result = await query(sql);
-  console.log("Results");
-  console.log(result);
+  // console.log("Results");
+  // console.log(result);
   connection.end();
   return result;
 

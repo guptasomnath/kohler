@@ -2,6 +2,7 @@ import { BASE_URL } from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ShimmerImage from "../ShimmerImage";
 
 interface IProps {
   hasLink?: boolean;
@@ -40,9 +41,17 @@ function ProductsCatList({
         <div
           className={`w-full overflow-hidden bg-gray-200 lg:aspect-none group-hover:opacity-75 group-hover:cursor-pointer lg:h-80 ${imgLayoutHeight}`}
         >
-          <Image
+          {/* <Image
             src={img}
             alt="Front of men&#039;s Basic Tee in black."
+            className={`h-[250px] w-full object-cover object-center lg:h-full lg:w-full ${imgLayoutHeight}`}
+            height={1200}
+            width={1200}
+          /> */}
+          <ShimmerImage
+            imageClass="h-full"
+            src={img}
+            alt="products-images"
             className={`h-[250px] w-full object-cover object-center lg:h-full lg:w-full ${imgLayoutHeight}`}
             height={1200}
             width={1200}

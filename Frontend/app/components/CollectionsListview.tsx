@@ -39,11 +39,11 @@ function CollectionsListview() {
 
   return (
     <>
-      <div className="w-full min-h-[100vh] px-24 pt-10 sm:px-4 group/collection">
+      <div className="w-full min-h-[100vh] px-24 pt-10 sm:px-4">
         <h2 className="w-full text-center text-4xl text-emerald-800 sm:text-2xl">
           OUR COLLECTIONS
         </h2>
-        <p className="w-full text-center text-slate-700 font-thin pt-[8px] text-[18px] sm:text-[13px] opacity-0 group-hover/collection:opacity-100 transition-all duration-700">
+        <p className="w-full text-center text-slate-700 font-thin pt-[8px] text-[18px] sm:text-[13px] transition-all duration-700">
           Transform your bathroom into a lavish retreat with our exquisite range
           of premium products. Elevate luxury. Upgrade your bathroom today!
         </p>

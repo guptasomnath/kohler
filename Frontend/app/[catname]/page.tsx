@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { htmlContentList } from "../datas/htmlContentList";
 import { BASE_URL } from "@/constant";
+import ShimmerImage from "../components/ShimmerImage";
+import CollapsibleMenu from "../components/Collapsible/CollapsibleMenu";
 
 const metadatas = [
   {
@@ -68,9 +70,9 @@ export async function generateMetadata({
   return {
     title: datas[0].title,
     description: datas[0].description,
-    alternates : {
-      canonical : BASE_URL + "/" + params.catname
-    }
+    alternates: {
+      canonical: BASE_URL + "/" + params.catname,
+    },
   };
 }
 
@@ -83,12 +85,21 @@ export default function page({ params }: { params: { catname: string } }) {
 
   if (mydata.length === 0) return notFound();
 
-  const htmlContent = htmlContentList.filter((item) => item.key === params.catname)?.[0]?.content || "";
+  const htmlContent =
+    htmlContentList.filter((item) => item.key === params.catname)?.[0]
+      ?.content || "";
 
   return (
     <>
       <div className="h-full w-full relative fadeIn">
-        <Image
+        {/* <Image
+          className="w-full sm:object-cover sm:h-[600px]"
+          src={mydata[0]?.bannerbackground}
+          alt="background img"
+          height={1500}
+          width={1500}
+        /> */}
+        <ShimmerImage
           className="w-full sm:object-cover sm:h-[600px]"
           src={mydata[0]?.bannerbackground}
           alt="background img"
@@ -107,10 +118,109 @@ export default function page({ params }: { params: { catname: string } }) {
         parentCatName={pCatName}
       />
 
+      <CollapsibleMenu heading={`READ MORE ABOUT ${pCatName.toUpperCase()}`}>
+
       <div
-        dangerouslySetInnerHTML={{ __html:  htmlContent}}
-        className="w-full px-[3.2rem] text-sm text-gray-700 leading-7"
+        dangerouslySetInnerHTML={{ __html: htmlContent }}
+        className="w-full px-[3.2rem] sm:px-5 sm:py-5 text-sm text-gray-700 leading-7"
       />
+
+      </CollapsibleMenu>
+      {/* About products area */}
+      {/* <div className="w-full px-52 flex items-start gap-9 mt-10">
+        <ShimmerImage
+          imageClass="h-full"
+          className="w-[25rem] h-96 imageShdow overflow-hidden"
+          src={BASE_URL + "/basins/basin.jpg"}
+          alt="products about"
+          height={1200}
+          width={1200}
+        />
+
+        <div>
+          <h3 className="text-3xl font-semibold text-gray-600">Basin Area</h3>
+          <p className="w-[450px] text-justify text-sm pt-2">
+            As we provide the best kind of accessories and premium quality
+            bathware products, it helps you to make your bathroom more creative
+            and luxurious. With our services of premium designer products,
+            installation of the{" "}
+            <span className="animate-pulse text-blue-600 cursor-pointer">
+              basin
+            </span>{" "}
+            becomes susceptible. Stylish{" "}
+            <span className="animate-pulse text-blue-600 cursor-pointer">
+              faucet
+            </span>{" "}
+            design and modulation are provided to you with the support of our
+            experts. Proper design of the bathroom and its accessories are
+            delivered to you depending on your preferences as we tend to give
+            you luxury with the aesthetic value of the products. Our basin
+            designs are made for your comfort and are meticulously crafted for
+            extensive sophistication.
+          </p>
+        </div>
+      </div> */}
+
+      {/* <div className="w-full px-16 flex items-start flex-row-reverse mt-32">
+        <ShimmerImage
+          imageClass="h-full"
+          className="w-[25rem] h-96 imageShdow overflow-hidden rounded-2xl"
+          src={BASE_URL + "/basins/basin.jpg"}
+          alt="products about"
+          height={1200}
+          width={1200}
+        />
+
+        <div className="">
+          <h3 className="text-3xl font-semibold text-gray-600">Basin Area</h3>
+          <p className="w-[450px] text-justify text-sm pt-2">
+            As we provide the best kind of accessories and premium quality 
+            bathware products, it helps you to make your bathroom more creative
+            and luxurious. With our services of premium designer products,
+            installation of the <span className="animate-pulse text-blue-600 cursor-pointer">basin</span> becomes susceptible. Stylish <span className="animate-pulse text-blue-600 cursor-pointer">faucet</span> design
+            and modulation are provided to you with the support of our experts.
+            Proper design of the bathroom and its accessories are delivered to
+            you depending on your preferences as we tend to give you luxury with
+            the aesthetic value of the products. Our basin designs are made for
+            your comfort and are meticulously crafted for extensive
+            sophistication.
+          </p>
+        </div>
+      </div> */}
+
+      {/* <div className="w-full px-52 flex items-start gap-9 mt-20">
+        <div>
+          <h3 className="text-3xl font-semibold text-gray-600">Basin Area</h3>
+          <p className="w-[450px] text-justify text-sm pt-2">
+            As we provide the best kind of accessories and premium quality
+            bathware products, it helps you to make your bathroom more creative
+            and luxurious. With our services of premium designer products,
+            installation of the{" "}
+            <span className="animate-pulse text-blue-600 cursor-pointer">
+              basin
+            </span>{" "}
+            becomes susceptible. Stylish{" "}
+            <span className="animate-pulse text-blue-600 cursor-pointer">
+              faucet
+            </span>{" "}
+            design and modulation are provided to you with the support of our
+            experts. Proper design of the bathroom and its accessories are
+            delivered to you depending on your preferences as we tend to give
+            you luxury with the aesthetic value of the products. Our basin
+            designs are made for your comfort and are meticulously crafted for
+            extensive sophistication.
+          </p>
+        </div>
+
+        <ShimmerImage
+          imageClass="h-full"
+          className="w-[25rem] h-96 imageShdow overflow-hidden"
+          src={BASE_URL + "/basins/basin.jpg"}
+          alt="products about"
+          height={1200}
+          width={1200}
+        />
+      </div> */}
     </>
   );
 }

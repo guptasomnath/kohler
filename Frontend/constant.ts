@@ -4,7 +4,7 @@ export let API_BASE_URL = "https://kohler-black.vercel.app"; //http://localhost:
 const env = process.env.NODE_ENV;
 if(env == "development"){
   // do something
-  BASE_URL = "http://192.168.0.103:3000";
+  BASE_URL = "http://192.168.0.110:3000";
   API_BASE_URL = "http://localhost:8080";
 }
 else if (env == "production"){

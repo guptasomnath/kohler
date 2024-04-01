@@ -1,13 +1,24 @@
+import { Metadata } from "next";
 import Banner from "./components/Banner";
 import BannerInfo from "./components/BannerInfo";
 import CollapsibleMenu from "./components/Collapsible/CollapsibleMenu";
 import CollectionsListview from "./components/CollectionsListview";
 import HomeActionsBtn from "./components/HomeActionsBtn";
+import { BASE_URL } from "@/constant";
+
+export const metadata: Metadata = {
+  title: "Modern Bathroom & Kitchen Products in Kolkata | Premium Bathware",
+  description: "Discover our range of modern bathroom and kitchen products in Kolkata with Premium Bathware. Elevate your home with our exquisite range. Get Quote Now!",
+  metadataBase: new URL(`${BASE_URL}`),
+  alternates : {
+    canonical : BASE_URL
+  }
+};
 
 export default function Home() {
   return (
     <main className="fadeIn">
-      <div className="relative group/hero">
+      <div className="relative">
         <Banner />
         <BannerInfo />
         <div className="hidden sm:flex w-1/2 backdrop-blur-sm ml-10 rounded-3xl pl-24 sm:ml-0 sm:rounded-none pr-28 h-auto bg-[#000000b9] flex-col justify-center relative items-start py-12 sm:w-full sm:pl-4 sm:pr-4">
@@ -23,7 +34,9 @@ export default function Home() {
         </div>
       </div>
       <CollectionsListview />
-      <CollapsibleMenu />
+      <CollapsibleMenu heading="KNOW MORE ABOUT US">
+
+      </CollapsibleMenu>
     </main>
   );
 }

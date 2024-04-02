@@ -41,7 +41,7 @@ function FormDialog() {
 
   return (
     <form
-      className={`h-full overflow-hidden overflow-y-scroll bg-white w-[450px] sm:w-full sm:mx-3 py-8 rounded-2xl px-12 sm:px-8 enqueryFormShdow`}
+      className={`h-full overflow-hidden dialogComingAnime overflow-y-scroll bg-white w-[450px] sm:w-full sm:mx-3 py-8 rounded-2xl px-12 sm:px-8 enqueryFormShdow`}
     >
       <div className="w-full flex items-center justify-end">
         <h3

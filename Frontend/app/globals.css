@@ -12,7 +12,6 @@
   animation-range: entry 50% cover 50%;
 }
 
-
 .fadeIn {
   animation: fadeIn 2s ease;
 }
@@ -93,7 +92,8 @@
 }
 
 .imageShdow {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .glow-animation {
@@ -112,20 +112,21 @@
 /**/
 
 .focus-in-expand {
-	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
- @-webkit-keyframes focus-in-expand {
+@-webkit-keyframes focus-in-expand {
   0% {
     letter-spacing: -0.5em;
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -133,47 +134,59 @@
   0% {
     letter-spacing: -0.5em;
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 
 .focus-in-ani {
-	-webkit-animation: focus-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: focus-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
- @-webkit-keyframes focus-in {
+@-webkit-keyframes focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 
-
-
-
 /**/
+
+.dialogComingAnime {
+  animation: dialogComing 500ms ease;
+}
+
+@keyframes dialogComing {
+  from {
+    scale: 0;
+    filter: blur(12px);
+  }
+  to {
+    scale: 1;
+    filter: blur(0px);
+  }
+}

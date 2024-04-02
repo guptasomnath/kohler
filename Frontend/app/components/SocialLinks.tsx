@@ -10,8 +10,8 @@ function SocialLinks() {
       <p className="text-white font-[200] text-3xl">FOLLOW US</p>
       <ul className="flex items-center gap-8 mt-6">
         <li>
-          <Link href="https://www.facebook.com/premiumbathware">
-            <FaFacebookF color="#fff" size={18} />
+          <Link  href="https://www.facebook.com/premiumbathware">
+            <FaFacebookF  color="#fff" size={18}/>
           </Link>
         </li>
         <li>

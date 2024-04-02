@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import OverviewCarousel from "../components/overview/OverviewCarousel";
 import datas from "@/public/datas.json";
@@ -9,7 +8,8 @@ import { BASE_URL } from "@/constant";
 import ShimmerImage from "../components/ShimmerImage";
 import CollapsibleMenu from "../components/Collapsible/CollapsibleMenu";
 import FAQ from "../components/FAQ/FAQ";
-import Head from "next/head";
+import Script from "next/script";
+import { FAQPage, WithContext } from "schema-dts";
 
 const metadatas = [
   {
@@ -91,15 +91,17 @@ export default function page({ params }: { params: { catname: string } }) {
     (item) => item.key === params.catname
   )?.[0];
 
+  const jsonLd: WithContext<FAQPage> = htmlContent.script;
+
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          key={params.catname}
-          dangerouslySetInnerHTML={{ __html: htmlContent.script || "" }}
-        />
-      </Head>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
       <div className="h-full w-full relative fadeIn">
         <ShimmerImage
           imageClass="sm:object-cover sm:h-[600px]"

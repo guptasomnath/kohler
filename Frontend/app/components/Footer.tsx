@@ -72,7 +72,7 @@ function Footer() {
             <FooterOptionItem options={footerOptions.address} />
           </div>
           <p className="text-yellow-400 text-xs">
-            <Link href="https://ommdigitalsolution.com/">
+            <Link href="https://ommdigitalsolution.com/" target="_blank">
               Digital Partner: OMM DIGITAL SOLUTION PVT. LTD
             </Link>
           </p>

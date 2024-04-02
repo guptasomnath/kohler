@@ -8,6 +8,8 @@ import { htmlContentList } from "../datas/htmlContentList";
 import { BASE_URL } from "@/constant";
 import ShimmerImage from "../components/ShimmerImage";
 import CollapsibleMenu from "../components/Collapsible/CollapsibleMenu";
+import FAQ from "../components/FAQ/FAQ";
+import Head from "next/head";
 
 const metadatas = [
   {
@@ -85,21 +87,20 @@ export default function page({ params }: { params: { catname: string } }) {
 
   if (mydata.length === 0) return notFound();
 
-  const htmlContent =
-    htmlContentList.filter((item) => item.key === params.catname)?.[0]
-      ?.content || "";
-      
+  const htmlContent = htmlContentList.filter(
+    (item) => item.key === params.catname
+  )?.[0];
 
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          key={params.catname}
+          dangerouslySetInnerHTML={{ __html: htmlContent.script || "" }}
+        />
+      </Head>
       <div className="h-full w-full relative fadeIn">
-        {/* <Image
-          className="w-full sm:object-cover sm:h-[600px]"
-          src={mydata[0]?.bannerbackground}
-          alt="background img"
-          height={1500}
-          width={1500}
-        /> */}
         <ShimmerImage
           imageClass="sm:object-cover sm:h-[600px]"
           className="w-full sm:object-cover sm:h-[600px]"
@@ -120,13 +121,13 @@ export default function page({ params }: { params: { catname: string } }) {
         parentCatName={pCatName}
       />
 
+      <FAQ keyname={params.catname} />
+
       <CollapsibleMenu heading={`READ MORE ABOUT ${pCatName.toUpperCase()}`}>
-
-      <div
-        dangerouslySetInnerHTML={{ __html: htmlContent }}
-        className="w-full px-[3.2rem] sm:px-5 sm:py-5 text-sm text-gray-700 leading-7"
-      />
-
+        <div
+          dangerouslySetInnerHTML={{ __html: htmlContent.content }}
+          className="w-full px-[3.2rem] sm:px-5 sm:py-5 text-sm text-gray-700 leading-7"
+        />
       </CollapsibleMenu>
     </>
   );

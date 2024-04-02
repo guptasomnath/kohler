@@ -4,6 +4,7 @@ import SProductsItem from "./SProductsItem";
 import SPagination from "./SPagination";
 import { notFound } from "next/navigation";
 import { getProducts } from "@/api/getProducts";
+import IntersectionObserverComponent from "@/app/components/IntersectionObserverComponent";
 
 interface IProps {
   catName: string;
@@ -30,7 +31,9 @@ async function SProductsList({ catName, pageNum, parentCatName }: IProps) {
         ) : (
           <ul className="mt-6 grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-1 lg:grid-cols-4 xl:gap-x-8 sm:px-8">
             {response?.data.products.map((item, index) => (
-              <SProductsItem key={index} productsInfo={item} />
+              <IntersectionObserverComponent key={index} beforeAnimation="blur-sm opacity-90" afterAnimation="blur-none opacity-100">
+                <SProductsItem productsInfo={item} />
+              </IntersectionObserverComponent>
             ))}
           </ul>
         )}

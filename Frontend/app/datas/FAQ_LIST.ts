@@ -142,23 +142,23 @@ export const FAQ_LIST: IFAQ_LIST[] = [
         info: [
             {
                 question: "What is the difference between a commercial toilet and a residential toilet?",
-                answer: ""
+                answer: "The primary difference between commercial toilets and residential toilets is that these two designs are used in different circumstances. Commercial products are used in offices, public buildings, and open spaces as these toilets are made for random and deliberate usage. On the contrary, residential products are made for personal usage which requires regular cleaning and maintenance for proper hygiene"
             },
             {
                 question: "Why are commercial toilets so powerful?",
-                answer: ""
+                answer: "Commercial toilets are made for heavy usage as they are meant to be used more frequently while handling higher levels of water pressure. The setup of these toilets and their pipelines are commercially built which enables excessive water pressure on the plumbing lines, making them reliable for commercial usage."
             },
             {
                 question: "Can I use a commercial toilet in my house?",
-                answer: ""
+                answer: "The incorporation of commercial toilets in residential setups is not very reliable since these toilets are meant for heavy usage and more frequent flushing systems without any tanks. Residential usage does not sustain such larger pipelines that are required for commercial toilets. As the pipeline facilities are required to be powerful for the commercially made toilet bowls, they are not particularly sustainable for any residential usage."
             },
             {
                 question: "How do I choose a commercial toilet?",
-                answer: ""
+                answer: "Taking commercial toilets and implementing them requires checking sizes, aesthetics, and finally the purpose of the usage capacity of the toilets. As these aspects become identified with proper clarity, they become eligible for further implementation of these toilets. Affordability of the toilet bowls is also required to be checked while looking through the other significant aspects like installation facilities, and availability and compatibility of the toilet bowls."
             },
             {
                 question: "How do commercial toilets work?",
-                answer: ""
+                answer: "Commercial toilet bowls are required for heavy usage which gives services to frequent use of the toilets. These toilets lack their back tanks for water storage as direct pipelines are made for their heavy flow of water supplies. With the implementation of larger plumbing and water supply networking, these toilets are used and implanted in public spaces, while making the experience of premium bathware more standard."
             },
             {
                 question: "What is the standard height of a commercial toilet?",

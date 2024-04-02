@@ -24,7 +24,7 @@ function ShimmerImage(props: IProps) {
 
   return (
     <div
-      className={`bg-gray-200 h-25 w-25 ${props.className} ${
+      className={`bg-gray-300 h-25 w-25 ${props.className} ${
         isLoaded ? "" : "leading-relaxed animate-pulse"
       }`}
     >

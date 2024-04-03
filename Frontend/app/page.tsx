@@ -8,15 +8,15 @@ import { BASE_URL } from "@/constant";
 import { generateLinkHtml } from "@/utils/generateLinkHtml";
 import CollapsibleInfo from "./components/Collapsible/CollapsibleInfo";
 
-export const metadata: Metadata = {
-  title: "Modern Bathroom & Kitchen Products in Kolkata | Premium Bathware",
-  description:
-    "Discover our range of modern bathroom and kitchen products in Kolkata with Premium Bathware. Elevate your home with our exquisite range. Get Quote Now!",
-  metadataBase: new URL(`${BASE_URL}`),
-  alternates: {
-    canonical: BASE_URL,
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Modern Bathroom & Kitchen Products in Kolkata | Premium Bathware",
+//   description:
+//     "Discover our range of modern bathroom and kitchen products in Kolkata with Premium Bathware. Elevate your home with our exquisite range. Get Quote Now!",
+//   metadataBase: new URL(`${BASE_URL}`),
+//   alternates: {
+//     canonical: BASE_URL,
+//   },
+// };
 
 export default function Home() {
   return (

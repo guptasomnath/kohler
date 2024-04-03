@@ -238,7 +238,53 @@ export const htmlContentList: {
                 "/smart-products/electronic-bidet-seats",
                 "electronic bidet seats"
             )} is the most attractive product in the range of toilet bathware. We have pursued the technology of smart toilet seats, making it more convenient and effortless for you to have a relaxing experience in your bathroom space. As we provide authentic sessions of servicing for each of the products in your bathware, our designs become the most reliant ones for you. We have introduced our most upgraded product, the automatic self-cleaning smart toilet, that helps to make your living more luxurious, and hygienic without any extra effort. <br><br> We have achieved a place for being the best smart toilet designers that give you a trendy service of professionally installed bathware. Accessories like the smart toilet seat bidet make your experience luxurious with comforting services. With the support of our expert guidance, our provided services for luxury smart toilets have gained the highest popularity, giving you the best experience in your toilet spaces. Our products are the most reliant as it is built with extensive quality measures that make them exclusive in design. As the choice of preferences gives you more comfort to choose from our collection of best smart toilet seats, it gives you the most authentic experience of luxury blended with relaxation. With our products of toilet bathware, we give you the smoothest experience of luxury while making our services more convenient for you. As the SMART products are the most reliable ones in the market, it makes our collection the very best for your daily routines.`,
-            script: {}
+            script: {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                  "@type": "Question",
+                  "name": "What does a smart toilet do?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Systematic implementation of these models gives you features like heated seats or modifiable toilet bowls. This design of toilets gives you extensive comfort while modulating the temperature. Modern Smart toilets give you the chance to luxurious bathware, which makes your experience in the toilet area to be more trending."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Do smart toilets need electricity?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Through technological support, electric heating services give you better sustenance in its usage. There are battery-charged smart toilets that make your experience more comfortable and sustaining. The necessity of smart toilets requires the support of electricity that makes the features become durable and effective for user technology."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Do you need toilet paper with a smart toilet?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The need for toilet paper in smart toilets is less necessary since these are very viable for various features like automatic flushing, and self-cleaning nozzles with automatic dryers. Features like deodorizer and sensor control make it further reliable for the durable utility of the products. Through reliable electrical attributes, these products give you the best comfort in current times."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What are the advantages of smart toilets?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Various aspects of safety and convenience are attributed to the well-being of elderly users alongside modern ones, as it reflects the significance of automated services. Features of smart toilets make cold days, or hot summer days in the bathroom quite comfortable while giving the ultimate comfort to the users."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "How do smart toilets flush?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For automated flushing systems, sensors are used that activate the mechanism of flushing which makes the experience of a smart toilet more convenient. With the support of automated flush technology, the usage of these toilet bowls has become the most demanded. As the approach of automated flush with variations of flushing techniques has been introduced, it makes your bathware setup to be more reliable for every user."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Are smart toilets hygienic?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The technology of smart toilets allows them to be self-reliant which makes the usage of these bowls very convenient. This technological implementation makes the toilets more hygienic with their technology of self-cleaning and flushing. Self-cleaning nozzles with jet spray technology are the primary aspects of smart toilets that make them most demanded in modern times."
+                  }
+                }]
+              }
         },
 
         {
@@ -259,7 +305,53 @@ export const htmlContentList: {
                 "/showering-area/shower-doors",
                 "shower doors"
             )} designs are chosen for quality services, giving you extreme convenience. Our designs of the best commercial toilets are one of the most serviceable products in current times. `,
-            script: {}
+            script: {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                  "@type": "Question",
+                  "name": "What is the difference between a commercial toilet and a residential toilet?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The primary difference between commercial toilets and residential toilets is that these two designs are used in different circumstances. Commercial products are used in offices, public buildings, and open spaces as these toilets are made for random and deliberate usage. On the contrary, residential products are made for personal usage which requires regular cleaning and maintenance for proper hygiene."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Why are commercial toilets so powerful?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Commercial toilets are made for heavy usage as they are meant to be used more frequently while handling higher levels of water pressure. The setup of these toilets and their pipelines are commercially built which enables excessive water pressure on the plumbing lines, making them reliable for commercial usage."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Can I use a commercial toilet in my house?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The incorporation of commercial toilets in residential setups is not very reliable since these toilets are meant for heavy usage and more frequent flushing systems without any tanks. Residential usage does not sustain such larger pipelines that are required for commercial toilets. As the pipeline facilities must be powerful for the commercially made toilet bowls, they are not particularly sustainable for any residential usage."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "How do I choose a commercial toilet?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Taking commercial toilets and implementing them requires checking sizes, aesthetics, and finally the purpose of the usage capacity of the toilets. As these aspects become identified with proper clarity, they become eligible for further implementation of these toilets. Affordability of the toilet bowls is also required to be checked while looking through the other significant aspects like installation facilities, and availability and compatibility of the toilet bowls."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "How do commercial toilets work?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Commercial toilet bowls are required for heavy usage which gives services to frequent use of the toilets. These toilets lack their back tanks for water storage as direct pipelines are made for their heavy flow of water supplies. With the implementation of larger plumbing and water supply networking, these toilets are used and implanted in public spaces, while making the experience of premium bathware more standard."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What is the standard height of a commercial toilet?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A moderate height of 14 to a maximum of 15 inches is the most reliable size of the segments of commercial toilets. This size allows a healthy experience for the public in commercial places giving them a better experience of local toilet usage."
+                  }
+                }]
+              }
         },
         {
             key: "wellness",
@@ -273,7 +365,53 @@ export const htmlContentList: {
                 "/wellness/bathtub-fillers",
                 "bathtub fillers"
             )} help you to have a relaxing experience in your bathroom space while having your preferences prior. With our products of bathroom accessories, you gain the chance to explore different maneuvering services in your bathroom. Products like steam generators for bathrooms are very reliable with our servicing techniques that help you to have an overall relaxing experience as per your needs. Our services for best quality steam bath fitting in bathrooms become the most reliable attributes of bathware products. <br><br> Our expert services for the excellence of steam shower bathroom ideas make the features more open to customization. With the designs of our modern bathtub and the accessories fitted with it, we provide you with the best collection of luxury experiences in the setups of your bathroom interior. The quality of the best luxury bathtubs becomes more resourceful for long-term usage as it gives you top-class comfort with your desired modifications. For further convenience in your bathroom accessories, a vast range of bathtub filler faucets is available with us that gives you the chance to explore and discover the true yearning of your choice in bathware. As our services provide a variety of ranges for you and your preferences, our bathware products give you the best quality features and benefits that stay lifelong. With our promise to bring you extra comfort, our products have been designed and developed, giving you extensive quality time in your bathroom space.`,
-            script: {}
+            script: {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                  "@type": "Question",
+                  "name": "What is a wellness bathroom?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wellness bathrooms are made for relaxation and stress reliefs, that are strategically developed for the promotion of healing and energy renewal. Natural elements that help to create a relaxing experience for you in the bathroom. With cozy setups and reliable relaxing elements, bathroom spaces become further enjoyable which helps in rejuvenating your energy after a long day."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What is a spa bathroom?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Spa setups in bathrooms are made for ultimate relaxation, making it your sanctuary for relaxation and bliss. The setup of a spa in your bathroom space gives you a place for your rejuvenation of drained energies. With technological attributes of heating along with calming lights and sound systems make it more of a space for the spa."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What is the difference between a bathtub and a spa bathtub?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The difference between a bathtub and a spa bathtub is very significant as spa bathtubs have installed mechanisms that help to give therapeutic effects on you. Jet services with technical reliability for better heating and circulation of water are provided in the spa bathtubs that have a massaging impact on your body."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What are the advantages of a bathtub?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The relaxing impacts of bathtubs make the experience of bathing more comforting as heated water or warm water helps to reduce muscle tension, giving an experience of calm. As the services of water circulation make the experience more reliable, it helps to enhance your health capacity in the process."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Is steaming the bathroom good for you?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, it is very reliable as the steaming feature in a bathroom gives you many comforting attributes while providing various health benefits. Reduction of blood pressure and loosened muscle joints give you better comfort in your bathroom. Steaming services also enhance lung conditions along with reliable blood circulation."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What are the advantages of body steaming?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Treatment of colds, lung congestions, and blood pressure normalization these aspects are the most affected by body steaming. Betterment of heart conditions with reduced muscle stiffness, loosened joints, and opened-up sinuses are further impacts of steaming. Improved skin health with enhanced relaxation and even aromatherapy are the viable attributes of body steaming."
+                  }
+                }]
+              }
         },
         {
             key: "kitchen-area",
@@ -281,6 +419,52 @@ export const htmlContentList: {
                 "/kitchen-area/kitchen-faucet",
                 "kitchen faucets"
             )} help you to choose amidst sleek designs that give you another helping hand in the kitchen. With our services of kitchen area accessories, the range of kitchen sink faucets has been developed that give you the best services of convenience. As our products are made with great quality of production with extensive material resources, it gives you the best kind of usage features in your kitchenware, increasing its versatility and durability. With our different ranges of faucets, you gain a clear idea of convenience and versatile usage of one single product. As our designs for wall-mount kitchen faucets are quite convenient for urban kitchen areas, they get to be installed depending on your demands for services. Our different services, like wall-mounted products, or pipeline connections help your experience of installation be smooth. <br><br>The variations of multitasking products are quite varied in our store since we provide you with different featured faucet designs for your choice of convenience. Products that help to multitask, like kitchen faucets with sprayers are the most wanted in our kitchenware collection. As our range of durable kitchen faucets helps to bring you the best quality services in interior modular kitchens, it enhances the cozy environment of urban setups. Other designs for pull-out kitchen faucets are another segment of customizable products, as they help you to have a swift experience in your kitchen. These designs are developed for better convenience of multitasking in a small-spaced kitchen setup, which requires the faucets to be fitted in a small area. As all these products are built with high-quality production, it gives you the best of its services for a better-composed kitchen area in your urban home.`,
-            script: {}
+            script: {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                  "@type": "Question",
+                  "name": "What is considered the best kitchen faucet?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The best kitchen faucets provide you with reliable services for multitasking that make the experience more convenient with high-functioning faucets. The pull-down technology makes household attributes more reliable while using one faucet for a variety of usages."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What is the new trend in kitchen faucets?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Various new designs have been launched in the market of kitchen faucets in the recent few years. Brushed nickel designs, monochrome finishes, copper-made or chrome-plated brass for faucets, touchless controls along with bridge faucets, or the industrial styles have been trending currently."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What kind of kitchen faucets are in style?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Designs like wall-mounted faucets, spray faucets, and ball faucets are the most trending in the market since the attributes of pull-down technology make them the best ones for multitasking in kitchen areas. Single-handle faucet with pot filler faucets helps the users to work at different speeds at the time of need."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "What is the difference between cheap and expensive kitchen faucets?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The materials for the built quality of the faucets differ with prices as the cheap ones do not remain intact over long-term usage. The quality of valves, materials, and finishing, durability of the product, all become affected by the range of production and its costs. Expensive kitchen faucets give you a better resource of durable products that are reliable for long-term usage in the urban setup of homes."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Are expensive kitchen faucets worth it?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, expensive kitchen faucets give you the chance to have excellent services, that remain strong for a longer duration. With reliable materials in the building of the products, expenses become quite reasonable while making the products more useful and sustainable in the long run."
+                  }
+                },{
+                  "@type": "Question",
+                  "name": "Which kitchen faucets last the longest?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Faucets made of brass are the most durable and long-lasting ones that make your experience further resourceful with expensive faucets. Single-piece construction of the faucets is further durable which enhances the services while making its construction quality topnotch."
+                  }
+                }]
+              }
         },
     ];

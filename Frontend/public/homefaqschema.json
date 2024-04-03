@@ -1,0 +1,19 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Premium Bathware",
+    "url": "https://www.premiumbathware.com/",
+    "logo": "https://www.premiumbathware.com/_next/static/media/Premium-Bathware.69b96ef8.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "9831234910",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": "Bengali"
+    },
+    "sameAs": [
+      "https://www.facebook.com/premiumbathware",
+      "https://www.instagram.com/premiumbathware_in/",
+      "https://www.linkedin.com/company/premium-bathware/"
+    ]
+  }

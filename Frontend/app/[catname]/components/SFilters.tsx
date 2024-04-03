@@ -55,7 +55,7 @@ function SFilters({ catName, parentCatName, fromClassName }: IProps) {
                     value={option.value}
                     type="checkbox"
                     defaultChecked={option.checked}
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
+                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
                   />
                   <label
                     htmlFor={`filter-${section.id}-${optionIdx}`}

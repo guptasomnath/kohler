@@ -31,9 +31,8 @@ async function SProductsList({ catName, pageNum, parentCatName }: IProps) {
         ) : (
           <ul className="mt-6 grid grid-cols-4 gap-x-6 gap-y-10 sm:grid-cols-1 lg:grid-cols-4 xl:gap-x-8 sm:px-8">
             {response?.data.products.map((item, index) => (
-              <li>
+              <li key={index}>
                 <IntersectionObserverComponent
-                  key={index}
                   beforeAnimation="blur-sm opacity-90"
                   afterAnimation="blur-none opacity-100"
                 >

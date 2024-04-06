@@ -141,7 +141,7 @@ export const FAQ_LIST: IFAQ_LIST[] = [
         key: "commercial",
         info: [
             {
-                question: "What is the difference between a commercial toilet and a residential toilet?",
+                question: "Difference between a commercial toilet and a residential toilet?",
                 answer: "The primary difference between commercial toilets and residential toilets is that these two designs are used in different circumstances. Commercial products are used in offices, public buildings, and open spaces as these toilets are made for random and deliberate usage. On the contrary, residential products are made for personal usage which requires regular cleaning and maintenance for proper hygiene."
             },
             {
@@ -213,7 +213,7 @@ export const FAQ_LIST: IFAQ_LIST[] = [
                 answer: "Designs like wall-mounted faucets, spray faucets, and ball faucets are the most trending in the market since the attributes of pull-down technology make them the best ones for multitasking in kitchen areas. Single-handle faucet with pot filler faucets helps the users to work at different speeds at the time of need."
             },
             {
-                question: "What is the difference between cheap and expensive kitchen faucets?",
+                question: "Difference between cheap and expensive kitchen faucets?",
                 answer: "The materials for the built quality of the faucets differ with prices as the cheap ones do not remain intact over long-term usage. The quality of valves, materials, and finishing, durability of the product, all become affected by the range of production and its costs. Expensive kitchen faucets give you a better resource of durable products that are reliable for long-term usage in the urban setup of homes."
             },
             {

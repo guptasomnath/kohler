@@ -26,6 +26,7 @@ function FloatingBtn() {
 
   return (
     <div className="absolute bottom-14 right-20 z-10 flex flex-col gap-4 items-center sm:right-6">
+      <h2 className={`absolute text-gray-600 w-32 px-5 py-1 right-10 bottom-12 messageShape flex items-center justify-center font-semibold bg-emerald-400 ${otherBtnVisibility ? "scale-0" : "scale-1"} transition-all duration-300`}>Contact us</h2>
       <RoundedBtn
         onClick={onCallBtnClick}
         className={`bg-blue-800 ${otherBtnVisibility ? "scale-1" : "scale-0"}`}

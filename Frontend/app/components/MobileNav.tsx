@@ -6,6 +6,7 @@ import { setMobileMenuVisibility } from "../redux/slices/mobileMenu";
 import { RootState } from "../redux/store";
 import { BASE_URL } from "@/constant";
 import { FaPhone } from "react-icons/fa6";
+import { MdOutlineCall } from "react-icons/md";
 
 function MobileNav() {
   const mobileMenu = useSelector((state: RootState) => state.mobileMenu);
@@ -47,10 +48,15 @@ function MobileNav() {
               </Link>
             </li>
             <Link href="tel:9831234910">
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <FaPhone size={13} color="#474646" />{" "}
                 <span className="text-sm text-[#474646]">9831234910</span>
-              </div>
+              </div> */}
+              <button className="text-sm relative hover:bg-sky-300 text-white shadow-lg rounded-md bg-gray-600 flex items-center gap-2 px-5 py-[8px] transition-all duration-500">
+                <span className="animate-ping absolute inline-flex h-full w-full bg-sky-400 opacity-75"></span>
+                <MdOutlineCall />
+                <span>Call Now</span>
+              </button>
             </Link>
           </ul>
         </nav>

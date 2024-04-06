@@ -10,6 +10,7 @@ import SFilters from "../../components/SFilters";
 import BreadCrumbNav from "../../components/BreadCrumbNav";
 import SProductsList from "../../components/SProductsList";
 import ProductsShimmer from "../../components/ProductsShimmer";
+import { generateFirstLetterUpper } from "@/utils/generateFirstLetterUpper";
 
 const metadatas = [
   {key : "basin", title : "Get the best Modern Basins in Kolkata | Premium Bathware", description : "Upgrade your bathroom with our premium basins. Get Quote Today! Explore modern basin solutions for your bathroom in Kolkata with Premium Bathware."},
@@ -109,11 +110,12 @@ export default function Page({
         </MobileFilterMenu>
         <main className="mx-auto max-w-7xl px-8 sm:px-3">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:pl-4">
-              {parentCatName.includes("Kitchen")
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:pl-4">
+              {/* {parentCatName.includes("Kitchen")
                 ? "Kitchen Products"
-                : "Bathroom Products"}
-            </h2>
+                : "Bathroom Products"} */}
+                {generateFirstLetterUpper(catName)}
+            </h1>
 
             <div className="flex items-center">
               <MobileFilterBtn />

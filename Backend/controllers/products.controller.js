@@ -40,6 +40,21 @@ const getProduct = async (req, res) => {
   }
 };
 
+const searchProducts = async (req, res) => {
+
+  const q = req.query.q;
+
+  if(!q) return res.status(400).json(new ApiResponse(400, "q is required"));
+
+  const page = parseInt(req.query.page || "0");
+  const limit = 16;
+
+
+  const datas = await query(`SELECT * FROM products WHERE title LIKE '%search_term%' OR description LIKE '%search_term%'`)
+
+
+}
+
 // const getAllProducts = async (req, res) => {
 //   let catname = req.query.catname.trim();
 
@@ -110,4 +125,5 @@ const storeData = async (req, res) => {
 module.exports = {
   storeData,
   getProduct,
+  searchProducts
 };

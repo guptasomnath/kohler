@@ -5,13 +5,14 @@ import { IoAdd } from "react-icons/io5";
 import { FiMinus } from "react-icons/fi";
 
 interface IProps {
+  className? : string;
   datas: { question: string; answer: string };
   index: number;
   currentIndex: number;
   setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
-function FAQ_ITEM({ datas, index, currentIndex, setCurrentIndex }: IProps) {
+function FAQ_ITEM({ datas, index, currentIndex, setCurrentIndex, className }: IProps) {
   const [isCollapse, setIsCollapse] = useState(false);
   // const expendOrCollapseClick = () => {
   //   if (isCollapse) {
@@ -37,7 +38,7 @@ function FAQ_ITEM({ datas, index, currentIndex, setCurrentIndex }: IProps) {
         className={`w-[550px] sm:w-full bg-gray-200 px-6 py-3 overflow-hidden cursor-pointer`}
       >
         <div className="flex items-center justify-between">
-          <h3 className="font-semibold">{datas.question}</h3>
+          <h3 className={`font-semibold ${className}`}>{datas.question}</h3>
           <IoAdd
             onClick={expand}
             className={`cursor-pointer ${

@@ -10,6 +10,7 @@ import CollapsibleMenu from "../components/Collapsible/CollapsibleMenu";
 import FAQ from "../components/FAQ/FAQ";
 import Script from "next/script";
 import { FAQPage, WithContext } from "schema-dts";
+import Head from "next/head";
 
 const metadatas = [
   {
@@ -125,7 +126,7 @@ export default function page({ params }: { params: { catname: string } }) {
 
       <FAQ keyname={params.catname} />
 
-      <CollapsibleMenu heading={`READ MORE ABOUT ${pCatName.toUpperCase()}`}>
+      <CollapsibleMenu heading={`READ MORE`}>
         <div
           dangerouslySetInnerHTML={{ __html: htmlContent.content }}
           className="w-full px-[3.2rem] sm:px-5 sm:py-5 text-sm text-gray-700 leading-7"

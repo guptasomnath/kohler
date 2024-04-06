@@ -12,7 +12,7 @@ import { notFound } from "next/navigation";
 import ProductsShimmer from "../components/ProductsShimmer";
 import { CiSearch } from "react-icons/ci";
 import Image from "next/image";
-
+import { generateFirstLetterUpper } from "@/utils/generateFirstLetterUpper";
 
 const metadatas = [
   {
@@ -269,11 +269,12 @@ export default function Page({
         <main className="mx-auto max-w-7xl px-8 sm:px-3">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
             <div className="w-full flex items-center justify-between">
-              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:pl-4">
-                {parentCatName.includes("Kitchen")
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-2xl sm:pl-4">
+                {/* {parentCatName.includes("Kitchen")
                   ? "Kitchen Products"
-                  : "Bathroom Products"}
-              </h2>
+                  : "Bathroom Products"} */}
+                {generateFirstLetterUpper(catName)}
+              </h1>
               {/* <div className="border px-[10px] w-64 py-2 flex items-center relative rounded-xl">
                 <input type="text" className="outline-none text-sm flex-grow" placeholder="Search" />
                 <div className="bg-gray-600 cursor-pointer w-10 right-0 h-full absolute flexCenter">

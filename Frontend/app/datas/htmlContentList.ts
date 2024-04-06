@@ -7,7 +7,7 @@ export const htmlContentList: {
 }[] = [
         {
             key: "basin-area",
-            content: `As we provide the best kind of accessories and premium quality bathware products, it helps you to make your bathroom more creative and luxurious. With our services of premium designer products, installation of the ${generateLinkHtml(
+            content: `<h1 class = "font-bold text-[15px]">Basin Area Products in Kolkata</h1>As we provide the best kind of accessories and premium quality bathware products, it helps you to make your bathroom more creative and luxurious. With our services of premium designer products, installation of the ${generateLinkHtml(
                 "/basin-area/basin",
                 "basin"
             )} becomes susceptible. Stylish ${generateLinkHtml(
@@ -77,7 +77,7 @@ export const htmlContentList: {
 
         {
             key: "showering-area",
-            content: `Our products for your showering area are very susceptible to long-term usage which makes your experience with us more convenient. As our products are built with reliable materials like steel, it gives you the best quality services for a longer period. Products like ${generateLinkHtml(
+            content: `<h1 class = "font-bold text-[15px]">Showering Area Products in Kolkata</h1>Our products for your showering area are very susceptible to long-term usage which makes your experience with us more convenient. As our products are built with reliable materials like steel, it gives you the best quality services for a longer period. Products like ${generateLinkHtml(
                 "/showering-area/showers",
                 "showers"
             )} and ${generateLinkHtml(
@@ -156,7 +156,7 @@ export const htmlContentList: {
 
         {
             key: "toilet-area",
-            content: `Our installation techniques further enhance comfort in the modulation of the ${generateLinkHtml(
+            content: `<h1 class = "font-bold text-[15px]">Modern Toilet Area Products in Kolkata</h1>Our installation techniques further enhance comfort in the modulation of the ${generateLinkHtml(
                 "/toilet-area",
                 "toilet area"
             )}. As our attributes of modulation come with proper services of fittings, it makes our services for the toilet area more convenient and effortless for you. Modulation for ${generateLinkHtml(
@@ -231,7 +231,7 @@ export const htmlContentList: {
 
         {
             key: "smart-products",
-            content: `Our vast range of products makes the attributes of premium bathware more susceptible for your daily usage while making life easier. With our products of bathware, you gain the services of sustainable luxury, making your life more comforting. As the implementation of technology makes our ${generateLinkHtml(
+            content: `<h1 class = "font-bold text-[15px]">Smart Bathroom Products in Kolkata</h1>Our vast range of products makes the attributes of premium bathware more susceptible for your daily usage while making life easier. With our products of bathware, you gain the services of sustainable luxury, making your life more comforting. As the implementation of technology makes our ${generateLinkHtml(
                 "/smart-products/smart-toilet",
                 "smart toilet"
             )} products more sustainable for daily use, it gives a more comfortable experience in your bathroom. Our collection of ${generateLinkHtml(
@@ -289,7 +289,7 @@ export const htmlContentList: {
 
         {
             key: "commercial",
-            content: `Our designs for bathware are highly appreciated due to their extreme comfort quality, making our services more prominent for bulk production of commercial items. The utility of ${generateLinkHtml(
+            content: `<h1 class = "font-bold text-[15px]">Commercial Bathroom Products in Kolkata</h1>Our designs for bathware are highly appreciated due to their extreme comfort quality, making our services more prominent for bulk production of commercial items. The utility of ${generateLinkHtml(
                 "/commercial/sensor-faucets",
                 "sensor faucets"
             )} in high buildings is the most convenient service in the modern era. As our manufacturing products are used in commercial buildings, a huge amount of production and installation becomes our responsibility. Our services of installation for ${generateLinkHtml(
@@ -310,7 +310,7 @@ export const htmlContentList: {
                 "@type": "FAQPage",
                 "mainEntity": [{
                   "@type": "Question",
-                  "name": "What is the difference between a commercial toilet and a residential toilet?",
+                  "name": "Difference between a commercial toilet and a residential toilet?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "The primary difference between commercial toilets and residential toilets is that these two designs are used in different circumstances. Commercial products are used in offices, public buildings, and open spaces as these toilets are made for random and deliberate usage. On the contrary, residential products are made for personal usage which requires regular cleaning and maintenance for proper hygiene."
@@ -355,7 +355,7 @@ export const htmlContentList: {
         },
         {
             key: "wellness",
-            content: `Products of bathroom wellness are also another significant aspect that gives you the best kind of services in your bathroom space. Features implanted in the ${generateLinkHtml(
+            content: `<h1 class = "font-bold text-[15px]">Bathroom Wellness Products in Kolkata</h1>Products of bathroom wellness are also another significant aspect that gives you the best kind of services in your bathroom space. Features implanted in the ${generateLinkHtml(
                 "/wellness/bathtubs",
                 "bathtub"
             )} give you the comfort of smooth technicality while making your experience more satisfying. The services of ${generateLinkHtml(
@@ -415,7 +415,7 @@ export const htmlContentList: {
         },
         {
             key: "kitchen-area",
-            content: `With our vast range of kitchen area accessories, we provide you with the best quality services that ease your way of living while making it more convenient for regular utility. The variations of our products like ${generateLinkHtml(
+            content: `<h1 class = "font-bold text-[15px]">Modern Kitchen Accessories in Kolkata</h1>With our vast range of kitchen area accessories, we provide you with the best quality services that ease your way of living while making it more convenient for regular utility. The variations of our products like ${generateLinkHtml(
                 "/kitchen-area/kitchen-faucet",
                 "kitchen faucets"
             )} help you to choose amidst sleek designs that give you another helping hand in the kitchen. With our services of kitchen area accessories, the range of kitchen sink faucets has been developed that give you the best services of convenience. As our products are made with great quality of production with extensive material resources, it gives you the best kind of usage features in your kitchenware, increasing its versatility and durability. With our different ranges of faucets, you gain a clear idea of convenience and versatile usage of one single product. As our designs for wall-mount kitchen faucets are quite convenient for urban kitchen areas, they get to be installed depending on your demands for services. Our different services, like wall-mounted products, or pipeline connections help your experience of installation be smooth. <br><br>The variations of multitasking products are quite varied in our store since we provide you with different featured faucet designs for your choice of convenience. Products that help to multitask, like kitchen faucets with sprayers are the most wanted in our kitchenware collection. As our range of durable kitchen faucets helps to bring you the best quality services in interior modular kitchens, it enhances the cozy environment of urban setups. Other designs for pull-out kitchen faucets are another segment of customizable products, as they help you to have a swift experience in your kitchen. These designs are developed for better convenience of multitasking in a small-spaced kitchen setup, which requires the faucets to be fitted in a small area. As all these products are built with high-quality production, it gives you the best of its services for a better-composed kitchen area in your urban home.`,
@@ -445,7 +445,7 @@ export const htmlContentList: {
                   }
                 },{
                   "@type": "Question",
-                  "name": "What is the difference between cheap and expensive kitchen faucets?",
+                  "name": "Difference between cheap and expensive kitchen faucets?",
                   "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "The materials for the built quality of the faucets differ with prices as the cheap ones do not remain intact over long-term usage. The quality of valves, materials, and finishing, durability of the product, all become affected by the range of production and its costs. Expensive kitchen faucets give you a better resource of durable products that are reliable for long-term usage in the urban setup of homes."

@@ -9,6 +9,7 @@ import { generateLinkHtml } from "@/utils/generateLinkHtml";
 import CollapsibleInfo from "./components/Collapsible/CollapsibleInfo";
 import Script from "next/script";
 import homefaqschema from "@/public/homefaqschema.json";
+import Head from "next/head";
 
 // export const metadata: Metadata = {
 //   title: "Modern Bathroom & Kitchen Products in Kolkata | Premium Bathware",
@@ -23,6 +24,15 @@ import homefaqschema from "@/public/homefaqschema.json";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>
+          Modern Bathroom & Kitchen Products in Kolkata | Premium Bathware
+        </title>
+        <meta
+          name="description"
+          content="Discover our range of modern bathroom and kitchen products in Kolkata with Premium Bathware. Elevate your home with our exquisite range. Get Quote Now!"
+        />
+      </Head>
       <Script
         id="faq-schema"
         type="application/ld+json"
@@ -49,7 +59,7 @@ export default function Home() {
         <CollectionsListview />
         <CollapsibleMenu heading="KNOW MORE ABOUT US">
           <CollapsibleInfo
-            heading="Premium Bathware"
+            heading="Premium Bathware - Modern Bathroom & Kitchen Products in Kolkata"
             description="Our services of bathware products give you comfort while making your sanctuary more susceptible to relaxation. With our premium bathware services, luxury products come to your doorstep. Our services of proper planning and execution of installation make your experiences more convenient while giving you a tension-free zone to relax in your house. Providing products of supreme luxury makes our bath ware services professionally authentic while giving you a vast range of collections for your choices. As we are one of the most trustworthy authorized partners of Kohler, we give you a chance to experience the best quality of bath ware that reflects both, style and grace. "
           />
           <CollapsibleInfo

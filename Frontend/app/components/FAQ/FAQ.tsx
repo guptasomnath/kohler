@@ -14,8 +14,6 @@ function FAQ({ keyname }: IProps) {
 
   const checkIsFloat = (num: number) => {
     const numtostr = num.toString();
-    // console.log(numtostr)
-    // console.log(numtostr.includes("."))
     return numtostr.includes(".");
   };
 

@@ -10,17 +10,17 @@ function SocialLinks() {
       <p className="text-white font-[200] text-3xl">FOLLOW US</p>
       <ul className="flex items-center gap-8 mt-6">
         <li>
-          <Link  href="https://www.facebook.com/premiumbathware">
+          <Link aria-label="Premium Bathware Facebook Page Link" href="https://www.facebook.com/premiumbathware">
             <FaFacebookF  color="#fff" size={18}/>
           </Link>
         </li>
         <li>
-          <Link href="https://www.instagram.com/premiumbathware_in/">
+          <Link aria-label="Premium Bathware Instagram Profile Link" href="https://www.instagram.com/premiumbathware_in/">
             <FaInstagram color="#fff" size={18} />
           </Link>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/company/67336660/admin/feed/posts/">
+          <Link aria-label="Premium Bathware LinkDin Profile Link" href="https://www.linkedin.com/company/67336660/admin/feed/posts/">
             <FaLinkedin color="#fff" size={18} />
           </Link>
         </li>

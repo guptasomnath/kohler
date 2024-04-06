@@ -19,9 +19,9 @@ function FAQ({ keyname }: IProps) {
 
   return (
     <div className="w-full px-14 flex flex-col items-center sm:px-5">
-      <h3 className="text-3xl font-semibold text-gray-500 pb-8 sm:pt-8 sm:text-xl">
+      <h2 className="text-3xl font-semibold text-gray-500 pb-8 sm:pt-8 sm:text-xl">
         FREQUENTLY ASKED QUESTIONS
-      </h3>
+      </h2>
       <div className="w-full flex items-start justify-center gap-4 sm:flex-col">
         <ul className="grid grid-cols-1 gap-6">
           {FAQS[0].info?.map((item, index) =>

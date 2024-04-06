@@ -44,11 +44,11 @@ function FormDialog() {
       className={`h-full overflow-hidden dialogComingAnime overflow-y-scroll bg-white w-[450px] sm:w-full sm:mx-3 py-8 rounded-2xl px-12 sm:px-8 enqueryFormShdow`}
     >
       <div className="w-full flex items-center justify-end">
-        <h3
+        <h2
           className={`text-2xl font-[600] text-[#524646] w-[380px] sm:w-full py-0 sm:pb-0 sm:text-[1.5rem] fadeInAnimation`}
         >
           Send Us A Message
-        </h3>
+        </h2>
         <IoCloseOutline
           onClick={handleContactFormCloseBtnClick}
           className="cursor-pointer fadeInAnimation"

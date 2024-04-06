@@ -38,7 +38,7 @@ function FAQ_ITEM({ datas, index, currentIndex, setCurrentIndex, className }: IP
         className={`w-[550px] sm:w-full bg-gray-200 px-6 py-3 overflow-hidden cursor-pointer`}
       >
         <div className="flex items-center justify-between">
-          <h3 className={`font-semibold ${className}`}>{datas.question}</h3>
+          <h2 className={`font-semibold ${className}`}>{datas.question}</h2>
           <IoAdd
             onClick={expand}
             className={`cursor-pointer ${

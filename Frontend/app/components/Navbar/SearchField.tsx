@@ -19,6 +19,7 @@ export default function SearchField({onMobileMenuClicked, searchIconVisibility, 
   return (
     <div className="relative">
       <button
+        title="Mobile Menu Button"
         className={`${
           searchIconVisibility ? "flex" : "hidden"
         } items-center gap-3 h-[2.2rem] sm:gap-6`}

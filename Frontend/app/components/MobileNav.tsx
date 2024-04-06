@@ -52,8 +52,7 @@ function MobileNav() {
                 <FaPhone size={13} color="#474646" />{" "}
                 <span className="text-sm text-[#474646]">9831234910</span>
               </div> */}
-              <button className="text-sm relative hover:bg-sky-300 text-white shadow-lg rounded-md bg-gray-600 flex items-center gap-2 px-5 py-[8px] transition-all duration-500">
-                <span className="animate-ping absolute inline-flex h-full w-full bg-sky-400 opacity-75"></span>
+              <button className="text-sm relative hover:bg-gray-400 text-white shadow-lg rounded-md bg-gray-600 flex items-center gap-2 px-5 py-[8px] transition-all duration-500">
                 <MdOutlineCall />
                 <span>Call Now</span>
               </button>

@@ -31,7 +31,7 @@ function NavOptions({ optionname }: IProps) {
       <ul
         className={`hidden group-hover:block w-60 pt-5 top-5 sm:list-disc sm:top-0 sm:pt-0 absolute sm:relative sm:shadow-none shadow-[rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px]`}
       >
-        <div
+        <li
           className={`bg-slate-50 border sm:border-none sm:list-disc sm:border-b-2 sm:bg-transparent h-full w-full`}
         >
           {optionname === "Bathroom"
@@ -59,7 +59,7 @@ function NavOptions({ optionname }: IProps) {
                   </li>
                 );
               })}
-        </div>
+        </li>
       </ul>
     </>
   );

@@ -55,7 +55,7 @@ const IntersectionObserverComponent: React.FC<IntersectionObserverProps> = ({
 
   return (
     <div ref={observerRef}>
-      <div className={`${isIntersecting ? afterAnimation : beforeAnimation} transition-all duration-500 ${className}`}>
+      <div className={`${isIntersecting ? afterAnimation : beforeAnimation} transition-all duration-500 test ${className}`}>
         {children}
       </div>
     </div>

@@ -8,7 +8,7 @@ interface IProps {
 
 function NavDropDownItem({ optionname }: IProps) {
   return (
-    <div className="flex items-center justify-between gap-1 cursor-pointer relative group sm:flex-col sm:items-start">
+    <li className="flex items-center justify-between gap-1 cursor-pointer relative group sm:flex-col sm:items-start">
       <ul className="sm:flex items-center gap-2 sm:justify-between sm:w-full">
         <li className="hover:text-gray-500 transition-all duration-[.3s] cursor-pointer">
           {optionname}
@@ -20,7 +20,7 @@ function NavDropDownItem({ optionname }: IProps) {
         </li>
       </ul>
       <NavOptions optionname={optionname} />
-    </div>
+    </li>
   );
 }
 

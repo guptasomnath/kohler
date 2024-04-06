@@ -64,55 +64,72 @@ function CollectionsListview() {
           </p>
         </IntersectionObserverComponent>
         <ul className="grid grid-cols-2 gap-6 mt-5 sm:grid-cols-1">
-          <IntersectionObserverComponent
-            className="duration-[2s]"
-            beforeAnimation="opacity-0"
-            afterAnimation="focus-in-ani"
-          >
-            <CollectionsList
-              link={`${BASE_URL}/new-launches/new-launches`}
-              text="NEW LAUNCHES"
-              subText="Discover innovative bathroom products: sleek faucets, luxurious showerheads, eco-friendly toilets, and stylish bathroom solutions in our latest launches."
-              imageUrl={BASE_URL + "/newlaunches/image0_0.jpg"}
-            />
-          </IntersectionObserverComponent>
-          <IntersectionObserverComponent
-            className="duration-[2s]"
-            beforeAnimation="opacity-0"
-            afterAnimation="focus-in-ani"
-          >
-            <CollectionsList
-              link={`${BASE_URL}/basin-area/basin`}
-              text="BASIN PRODUCTS"
-              subText="Indulge in luxury with our fancy basin products. Elevate your bathroom and shop now for opulent style and sophistication!"
-              imageUrl={BASE_URL + "/basins/basin.jpg"}
-            />
-          </IntersectionObserverComponent>
+          <li>
+            <IntersectionObserverComponent
+              className="duration-[2s]"
+              beforeAnimation="opacity-0"
+              afterAnimation="focus-in-ani"
+            >
+              <ul>
+                <CollectionsList
+                  link={`${BASE_URL}/new-launches/new-launches`}
+                  text="NEW LAUNCHES"
+                  subText="Discover innovative bathroom products: sleek faucets, luxurious showerheads, eco-friendly toilets, and stylish bathroom solutions in our latest launches."
+                  imageUrl={BASE_URL + "/newlaunches/image0_0.jpg"}
+                />
+              </ul>
+            </IntersectionObserverComponent>
+          </li>
 
-          <IntersectionObserverComponent
-            className="duration-[2s]"
-            beforeAnimation="opacity-0"
-            afterAnimation="focus-in-ani"
-          >
-            <CollectionsList
-              link={`${BASE_URL}/toilet-area/toilets`}
-              text="TOILET PRODUCTS"
-              subText="Upgrade your bathroom experience with our premium toilet products, ensuring ultimate comfort and cleanliness. Shop now for luxury and convenience!"
-              imageUrl={BASE_URL + "/toilet/image0_0.jpg"}
-            />
-          </IntersectionObserverComponent>
-          <IntersectionObserverComponent
-            className="duration-[2s]"
-            beforeAnimation="opacity-0"
-            afterAnimation="focus-in-ani"
-          >
-            <CollectionsList
-              link={`${BASE_URL}/kitchen-area/kitchen-faucet`}
-              text="KITCHEN PRODUCTS"
-              subText="Upgrade your kitchen with premium faucets for style and functionality. Elevate your space today."
-              imageUrl={BASE_URL + "/kitchen/image0_0.jpg"}
-            />
-          </IntersectionObserverComponent>
+          <li>
+            <IntersectionObserverComponent
+              className="duration-[2s]"
+              beforeAnimation="opacity-0"
+              afterAnimation="focus-in-ani"
+            >
+              <ul>
+                <CollectionsList
+                  link={`${BASE_URL}/basin-area/basin`}
+                  text="BASIN PRODUCTS"
+                  subText="Indulge in luxury with our fancy basin products. Elevate your bathroom and shop now for opulent style and sophistication!"
+                  imageUrl={BASE_URL + "/basins/basin.jpg"}
+                />
+              </ul>
+            </IntersectionObserverComponent>
+          </li>
+
+          <li>
+            <IntersectionObserverComponent
+              className="duration-[2s]"
+              beforeAnimation="opacity-0"
+              afterAnimation="focus-in-ani"
+            >
+              <ul>
+                <CollectionsList
+                  link={`${BASE_URL}/toilet-area/toilets`}
+                  text="TOILET PRODUCTS"
+                  subText="Upgrade your bathroom experience with our premium toilet products, ensuring ultimate comfort and cleanliness. Shop now for luxury and convenience!"
+                  imageUrl={BASE_URL + "/toilet/image0_0.jpg"}
+                />
+              </ul>
+            </IntersectionObserverComponent>
+          </li>
+          <li>
+            <IntersectionObserverComponent
+              className="duration-[2s]"
+              beforeAnimation="opacity-0"
+              afterAnimation="focus-in-ani"
+            >
+              <ul>
+                <CollectionsList
+                  link={`${BASE_URL}/kitchen-area/kitchen-faucet`}
+                  text="KITCHEN PRODUCTS"
+                  subText="Upgrade your kitchen with premium faucets for style and functionality. Elevate your space today."
+                  imageUrl={BASE_URL + "/kitchen/image0_0.jpg"}
+                />
+              </ul>
+            </IntersectionObserverComponent>
+          </li>
         </ul>
 
         <h2 className="w-full text-center pt-10 text-4xl text-blue-600-800 sm:text-2xl">
@@ -127,23 +144,26 @@ function CollectionsListview() {
           </Link>
         </p>
 
-        <ul className="w-full py-10 grid grid-cols-4 gap-6 sm:grid-cols-1">
-          {homeCarasulDatas.map((item, index) => (
-            <IntersectionObserverComponent
-              key={item.id}
-              className={`duration-[1s]`}
-              beforeAnimation={item.beforeAnimation}
-              afterAnimation={item.afterAnimation}
-            >
-              <ProductsCatList
-                hasLink={false}
-                className="w-auto"
-                parentCatName={"parentCatName"}
-                img={item.img}
-                subtitle={item.subtitle}
-                title={item.title}
-              />
-            </IntersectionObserverComponent>
+        <ul className="w-full py-10 grid grid-cols-4 gap-6 sm:grid-cols-1 test">
+          {homeCarasulDatas.map((item) => (
+            <li key={item.id}>
+              <IntersectionObserverComponent
+                className={`duration-[1s]`}
+                beforeAnimation={item.beforeAnimation}
+                afterAnimation={item.afterAnimation}
+              >
+                <ul>
+                  <ProductsCatList
+                    hasLink={false}
+                    className="w-auto"
+                    parentCatName={"parentCatName"}
+                    img={item.img}
+                    subtitle={item.subtitle}
+                    title={item.title}
+                  />
+                </ul>
+              </IntersectionObserverComponent>
+            </li>
           ))}
           {/* </Carousel> */}
         </ul>

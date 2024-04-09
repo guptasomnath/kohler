@@ -65,9 +65,9 @@ function Navbar() {
             <li className={NAV_ITEM_CSS}>
               <Link href="/about-us">About us</Link>
             </li>
-            {/* <li className={NAV_ITEM_CSS}>
+            <li className={NAV_ITEM_CSS}>
               <Link href="/blogs">Blogs</Link>
-            </li> */}
+            </li>
             <li className={NAV_ITEM_CSS}>
               <Link
                 href={BASE_URL + "/Kohler-Retail-Book-2022.pdf"}

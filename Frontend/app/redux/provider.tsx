@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import PopupDialogLayout from "../dialog/PopupDialogLayout";
 import MobileNav from "../components/MobileNav";
 import FloatingBtn from "../components/FloatingBtn";
+import ScrollToTopBtn from "../components/ScrollToTopBtn";
 
 export function MyProvider({ child }: any) {
   return (
@@ -16,6 +17,7 @@ export function MyProvider({ child }: any) {
         <MobileNav />
         <PopupDialogLayout />
         <Navbar />
+        {/* <ScrollToTopBtn /> */}
         <div className="w-full pt-[60px]">{child}</div>
         <Footer />
       </div>

@@ -5,7 +5,6 @@ import { GrNext } from "react-icons/gr";
 import TagItems from "./TagItems";
 import { IBlogsItem } from "@/types/blogs";
 import Link from "next/link";
-import { BASE_URL } from "@/constant";
 
 interface IProps {
   item: IBlogsItem;

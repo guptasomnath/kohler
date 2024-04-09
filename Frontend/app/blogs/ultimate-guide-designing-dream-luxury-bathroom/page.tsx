@@ -4,10 +4,9 @@ import TableOfContents from "../components/TableOfContents";
 import P from "../components/P";
 import H2 from "../components/H2";
 import ReadBlogLayout from "../components/ReadBlogLayout";
-import { blogs } from "../page";
+import { blogsLists } from "@/app/datas/blogsInfo";
 import { generateLinkHtml } from "@/utils/generateLinkHtml";
 import StepsLayout from "../components/StepsLayout";
-import FAQ_ITEM from "@/app/components/FAQ/FAQ_ITEM";
 import FAQ from "@/app/components/FAQ/FAQ";
 import { FAQPage, WithContext } from "schema-dts";
 import Script from "next/script";
@@ -96,12 +95,12 @@ function page() {
         }}
       />
       <ReadBlogLayout
-        heading={blogs[0].title}
-        bannerimage={blogs[0].bannerimg}
-        shortdescription={blogs[0].description}
-        author={blogs[0].author}
-        catname={blogs[0].catgory}
-        date={blogs[0].date}
+        heading={blogsLists[0].title}
+        bannerimage={blogsLists[0].bannerimg}
+        shortdescription={blogsLists[0].description}
+        author={blogsLists[0].author}
+        catname={blogsLists[0].catgory}
+        date={blogsLists[0].date}
       >
         <TableOfContents contents_list={table_of_content} />
 

@@ -1,5 +1,5 @@
 export interface IBlogsItem {
-    id : number | string;
+    id : string;
     tags : string[];
     route : string;
     title : string;

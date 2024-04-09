@@ -21,8 +21,8 @@ function BlogItems({ item }: IProps) {
         </h2>
 
         <ul className="w-full flex items-center my-2 gap-3 flex-wrap">
-          {item.tags.map((eachTag) => (
-            <TagItems tagName={eachTag} />
+          {item.tags.map((eachTag, index) => (
+            <TagItems key={index} tagName={eachTag} />
           ))}
         </ul>
 
